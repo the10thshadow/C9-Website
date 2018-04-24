@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Testing styles
+* {
+	border:0.2px solid grey;
+}
+
+
+
+/*End testing styles*/
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	align-content: center;
+}
+header {
+	width:100%;
+	height: 150px;
+	background-color: blueviolet;
+}
+.mainNav ul li a {
+	text-decoration:none;
+	color: black;
+	margin: 0 auto;
+	padding:0;
+}
+.mainNav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 10px;
+	margin: 0 auto;
+	height: 100%;
+	background-color: hotpink;
+	border-right: 0.5px solid black;
+}
+.mainNav ul {
+	margin: 0 auto;
+	padding-top: 3px;
+	padding-left: 5px;
+}
+.mainNav {
+	margin: 0 auto;
+	background-color: chartreuse;
+	height: 30px;
+	top:120px;
+	position: relative;
+}
+.mainNav .tab {
+	min-width: 90px;
+	padding: 0;
+	max-width: 133px;
+}
+.logo {
+	width: 75px;
+	height: 75px;
+	position: relative;
+	top:-50px;
+	vertical-align: baseline;
+}
+.search-ico {
+	width: 25px;
+	padding:  0px;
+}

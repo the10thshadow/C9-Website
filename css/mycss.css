@@ -1,0 +1,760 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'sofiapro-light';
+    src: url('fonts/sofiapro_light_macroman/sofiapro-light-webfont.woff2') format('woff2'),
+         url('fonts/sofiapro_light_macroman/sofiapro-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	background-color: #E79190;
+	font-family: "Open-Sans", "Gill Sans MT", Helvetica, "Myriad Pro", "DejaVu Sans Condensed", "Gill Sans", Arial, "sans-serif"
+}
+.container {
+	background-color:  wheat;
+}
+.reset-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto
+}
+.cont-mob {
+	
+}
+.cont-top-fix {
+	padding-top: 5px;
+}
+.fullContainer {
+	width:100%;
+	height: 150px;
+	background-color: greenyellow;
+}
+.inputBox {
+	border:1px solid black;
+}
+.enter, .reset, .contactButton{
+    background-color: #A0A0A0;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+	border-radius: 4px;
+    display: inline-block;
+    font-size: 15px;
+}
+.ad1Container {
+	float: left;
+}
+.ad1 {
+	width:300px;
+	height: 600px;
+	border: 1px black solid;
+	margin: 10px auto;
+	text-align: center;
+	font-weight: 900;
+}
+.ad2 {
+	width: 300px;
+	height: 250px;
+	border: 1px black solid;
+	margin: 10px;
+	text-align: center;
+	font-weight: 900;
+}
+.ad3 {
+	width: 728px;
+	height: 90px;
+	border: 1px black solid;
+	margin: 10px;
+	text-align: center;
+	font-weight: 900;
+}
+/*Testing code pieces
+
+
+.container {
+	border: 0.5px blue solid;
+	background-color: wheat;
+}
+* {
+	border:0.5px solid red;
+}
+
+
+/*End of testing code pieces*/
+
+nav {
+	
+}
+.mainNav {
+	padding-top: 13px;
+}
+.mainNav ul {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	background-color: azure;
+}
+.mainNav ul li {
+	list-style-type: none;
+	text-align: center;
+	display: inline-block;
+	padding: 10px 1px;
+	-webkit-transition: background-color 0.2s ease-out;
+	-moz-transition: background-color 0.2s ease-out;
+	-ms-transition: background-color 0.2s ease-out;
+	-o-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+}
+.mainNav ul li:hover {
+	background-color: orangered;
+	cursor: pointer;
+}
+.mainNav ul li a {
+	display: inline;
+	padding: 0 8px;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+
+.mob-nav {
+    margin: 5px 0;
+	width: 35px;
+    height: 5px;
+    background-color: #333;
+    transition: 0.4s;
+}
+.mobile-nav {
+	position:relative;
+	top: 5px;
+	float: right;
+	display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+	width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+	border-radius: 5px;
+	transition: 0.4s;
+}
+.mob-nav-icon {
+	float:right;
+	margin: 10px 30px 0 0;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	-moz-transform: rotate(-45deg) translate(-9px, 6px) ;
+	-ms-transform: rotate(-45deg) translate(-9px, 6px) ;
+	-o-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	-moz-transform: rotate(45deg) translate(-8px, -8px) ;
+	-ms-transform: rotate(45deg) translate(-8px, -8px) ;
+	-o-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+.mob-main-nav {
+	
+}
+.mob-nav-content {
+	display: none;
+}
+
+
+
+
+.logo {
+	width: 75px;
+	height: 75px;
+	margin-left: 5px;
+}
+.logo-mob {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+}
+.logo-tab {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+}
+.logo-name {
+	padding: 35px 0 2px 10px;
+	letter-spacing: 5.5px;
+	font-family: "sofiapro-light", sans-serif;
+	text-transform: uppercase;
+	font-weight:600;
+	font-size: 14px;
+	color: #ff7041;
+}
+.logo-name-sec {
+	padding-left: 10px;
+	letter-spacing: 6.8px;
+	font-family: "sofiapro-light", sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	color:#377cb5;
+}
+.ulPosFix {
+	height: 55px;
+	text-align: right;
+}
+.searchIMG {
+	width: 17px;	
+	vertical-align: middle;
+	cursor: pointer;
+	
+}
+.searchBox {
+	line-height: 18px;
+	text-align: right;
+	border: 0.1px solid grey;
+	border-radius: 8px;
+}
+.clearRight {
+	clear: right;
+}
+.btnReset {
+    border: none;
+    padding: 0;
+	background-color:navy;
+	border-radius: 6px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+}
+.imgArticle {
+	width: 94%;
+	display: inline-block;
+	/*height: 165px;*/
+	padding: 0 0 0 10px;
+	vertical-align:top;
+}
+.textArticle {
+	
+}
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.centeredPCent {
+	margin:0 auto;
+}
+.right-bor {
+	border-right: 0.3px solid black;
+}
+.calcContent {
+	margin-top:10px;
+	padding-right:0px;
+}
+.calcContainer {
+	float:left;
+}
+.padded {
+	padding-left: -3px;
+}
+
+footer {
+	border-top: 1px black solid; 
+	padding: 20px 0;
+}
+footer p {
+	padding-top:25px;
+}
+.calcInput {
+	border:1px solid #CCCCCC;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	display: block;
+	float: left;
+	padding:7px 10px 7px;
+	border-radius: 0 10px 10px 0;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+.calcInputCCol {
+	border:1px solid #CCCCCC;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	display: block;
+	float: left;
+	padding:7px 10px 7px;
+	border-radius: 0;
+	margin-bottom: 10px;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	vertical-align: middle;
+}
+.dateInput::-webkit-inner-spin-button, .dateInput::-webkit-calendar-picker-indicator {
+    -webkit-appearance: none;
+}
+.dateInput {
+	border:1px solid #CCCCCC;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	display: block;
+	float: left;
+	padding: 3px 10px 6px;
+	border-radius: 0 10px 10px 0;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	vertical-align: middle;
+	
+}
+.calcDropdown {
+	-webkit-appearance: initial; 
+	-moz-appearance: initial;
+	-ms-appearance:initial;
+	-o-appearance: initial; 
+	border:1px solid #CCCCCC;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	border-radius: 0 10px 10px 0;
+	float: left;
+	padding: 6.5px 1px 7px 10px;
+	display: block;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	overflow: hidden;
+   	background: url(img/arrow.png) no-repeat right ccc;
+}
+.dropdownStyle {
+	position: relative;
+}
+.dropdownStyle:after {
+	content: '▼';
+	color: #aaa;
+    right:16px; top:8px;
+    padding:0 0 2px;
+    position:absolute;
+	cursor: pointer;
+    pointer-events:none;
+	
+}
+.dropdownStyle:before {
+    content:'';
+    position:absolute;
+    display:block;
+	cursor: pointer;
+}
+.buttonInput {
+	background:#f7f7f7;
+	border:1px solid #CCCCCC;
+	border-radius: 10px;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	padding:7px 10px 7px 16px;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	vertical-align: middle;
+}
+.calcLabel {
+	background:#f7f7f7;
+	border:1px solid #CCCCCC;
+	border-radius: 10px 0 0 10px;
+	float: left;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	padding:7px 10px 7px 16px;
+	font-size:14px;
+	font-weight:400;
+	display: block;
+	color:#3d393b;
+	vertical-align: middle;
+}
+.borderCalc {
+	border:1px solid #CCBFBF;
+	padding: 10px 10px 10px 10px;
+	margin: 0 auto;
+}
+.calcContent {
+    background:rgba(240,240,240,1.00);
+}
+
+.calcContent h2 {
+    color: #68748e;
+    font-weight: 400;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+.titleText {
+	padding-top: 50px;
+}
+.inline-fix {
+	display: inline-block;
+}
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+#navToggle {
+	display:inline-block;
+	visibility: visible;
+	transition: opacity 0.5s ease-in-out;
+}
+.lang-BTN {
+	padding-right: 20px;
+	width: 70px;
+	height: 25px;
+}
+.lang-img {
+	width:20px;
+	height: 20px;
+}
+.span-link {
+	display: inline !important;
+	padding:  10px;
+	margin: 20px 20px;
+}
+.fieldWidth {
+	width: 100%;
+	margin: 10px 0;
+}
+.labelWidth {
+	width:50%;
+}
+
+
+/*Fixing an issue on desktop with alignment and columbs*/
+/*Small Desktop Format*/
+@media (min-width:1024px) and (max-width:1080px)
+{
+.calcInput {
+	border:1px solid #CCCCCC;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	display: block;
+	float: left;
+	padding:7px 10px 7px;
+	border-radius: 0 10px 10px 0;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+.calcInputCCol {
+	border:1px solid #CCCCCC;
+	float: left;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	display: block;
+	padding:7px 10px 7px;
+	border-radius: 0;
+	margin-bottom: 10px;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	vertical-align: middle;
+}
+.dateInput::-webkit-inner-spin-button, .dateInput::-webkit-calendar-picker-indicator {
+    -webkit-appearance: none;
+}
+.dateInput {
+	border:1px solid #CCCCCC;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	display: block;
+	float: left;
+	padding: 3px 10px 6px;
+	border-radius: 0 10px 10px 0;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	vertical-align: middle;
+	
+}
+.calcDropdown {
+	-webkit-appearance: initial; 
+	-moz-appearance: initial;
+	-ms-appearance:initial;
+	-o-appearance: initial; 
+	border:1px solid #CCCCCC;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	border-radius: 0 10px 10px 0;
+	padding: 6.5px 1px 7px 10px;
+	display: block;
+	float: left;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	overflow: hidden;
+   	background: url(img/arrow.png) no-repeat right ccc;
+}
+.dropdownStyle {
+	position: relative;
+}
+.dropdownStyle:after {
+	content: '▼';
+	color: #aaa;
+    right:16px; top:8px;
+    padding:0 0 2px;
+    position:absolute;
+	cursor: pointer;
+    pointer-events:none;
+	
+}
+.dropdownStyle:before {
+    content:'';
+    position:absolute;
+    display:block;
+	cursor: pointer;
+}
+.buttonInput {
+	background:#f7f7f7;
+	border:1px solid #CCCCCC;
+	border-radius: 10px;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	padding:7px 10px 7px 16px;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	vertical-align: middle;
+}
+.calcLabel {
+	background:#f7f7f7;
+	border:1px solid #CCCCCC;
+	border-radius: 10px 0 0 10px;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	padding:7px 10px 7px 16px;
+	font-size:14px;
+	font-weight:400;
+	display: block;
+	color:#3d393b;
+	vertical-align: middle;
+}
+.borderCalc {
+	border:1px solid #CCBFBF;
+	padding: 10px 10px 10px 10px;
+	margin: 0 auto;
+}
+}
+/* Media Queries */
+/*Tablets*/
+@media (max-width:1024px)
+{
+	
+.reset-container {
+    max-width: 800px;
+}
+.calcContainer {
+	float: none;
+	margin:0 auto;
+}
+.ad1Container {
+	float: none;
+	margin: 0 auto;
+}
+.ad1, .ad2 {
+	width:728px;
+	height: 90px;
+	border: 1px black solid;
+	margin: 10px auto;
+	clear: both;
+	text-align: center;
+	font-weight: 900;
+}
+nav {
+	
+}
+.mainNav {
+	padding-top: 13px;
+}
+.mainNav ul {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	background-color: azure;
+}
+.mainNav ul li {
+	list-style-type: none;
+	text-align: center;
+	display: block;
+	padding: 10px 1px;
+}
+.mainNav ul li:hover {
+	
+}
+.mainNav ul li a {
+	display: block;
+	padding: 0 8px;
+	text-align: center;
+	text-decoration: none;
+}
+#navToggle {
+	display:none; 
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s ease-in-out;
+}
+.span-link {
+	display: inline;
+}
+}
+
+/*Mobile */
+@media (max-width:640px)
+{
+	
+.reset-container {
+    min-width: 320px;
+    max-width: 500px
+}
+nav {
+	
+}
+.mainNav {
+	padding-top: 13px;
+}
+.mainNav ul {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	background-color: azure;
+}
+.mainNav ul li {
+	list-style-type: none;
+	text-align: center;
+	display: block;
+	padding: 10px 1px;
+}
+.mainNav ul li:hover {
+	
+}
+.mainNav ul li a {
+	display: block;
+	padding: 0 8px;
+	text-align: center;
+	text-decoration: none;
+}
+#navToggle {
+	display:none;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+.span-link {
+	display: inline;
+}
+.calcContainer {
+	float: none;
+	margin: 0 auto;
+}
+.fieldWidth {
+	width: 100%;
+}
+.borderCalc {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	-ms-box-sizing:border-box;		/* Microsoft stuff */
+	-o-box-sizing: border-box; 		/* Opera browsers */
+	box-sizing: border-box;
+}
+.calcInput {
+	border:1px solid #CCCCCC;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	display: block;
+	float: none;
+	padding:7px 1px;
+	margin: 0 auto;
+	border-radius: 0;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+.calcInputCCol {
+	border:1px solid #CCCCCC;
+	float: none;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	display: block;
+	padding:7px 1px;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	vertical-align: middle;
+}
+.dateInput {
+	border:1px solid #CCCCCC;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	display: block;
+	float: none;
+	padding: 4px 1px;
+	border-radius:0 0 8px 8px;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	vertical-align: middle;
+	
+}
+.calcDropdown {
+	border:1px solid #CCCCCC;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	border-radius:0 0 8px 8px;
+	display: block;
+	float: none;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size:14px;
+	color:#3d393b;
+}
+.buttonInput {
+	background:#f7f7f7;
+	border:1px solid #CCCCCC;
+	border-radius: 10px;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	padding:7px 10px 7px 16px;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	vertical-align: middle;
+}
+.calcLabel {
+	background:#f7f7f7;
+	border:1px solid #CCCCCC;
+	border-radius:8px 8px 0 0;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	padding:7px 1px;
+	font-size:14px;
+	font-weight:400;
+	display: block;
+	color:#3d393b;
+	vertical-align: middle;
+}
+}
+.dropdownStyle {
+	position: relative;
+}
+.dropdownStyle:after {
+	content: '▼';
+	color: #aaa;
+    right:16px; top:8px;
+    position:absolute;
+	cursor: pointer;
+    pointer-events:none;
+	
+}
+.dropdownStyle:before {
+    content:'';
+    position:absolute;
+    display:block;
+	cursor: pointer;
+}
+
