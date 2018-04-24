@@ -664,6 +664,12 @@ nav {
 .span-link {
 	display: inline;
 }
+.logo {
+	width: 60px;
+	height: 60px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
 }
 
 /*Mobile */
@@ -679,7 +685,8 @@ nav {
 }
 .mainNav {
 	padding-top: 13px;
-	background-color:hsla(0,0%,100%,0.00)
+	background-color:hsla(0,0%,100%,0.00);
+	overflow: visible;
 }
 .mainNav ul {
 	position: relative;
@@ -762,5 +769,11 @@ nav {
     position:absolute;
     display:block;
 	cursor: pointer;
+}
+.logo {
+	width: 60px;
+	height: 60px;
+	margin-left: 5px;
+	vertical-align: middle;
 }
 }
