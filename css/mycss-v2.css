@@ -61,6 +61,7 @@ body {
 .ad1 {
 	width:300px;
 	height: 600px;
+	background-image: url(../img/300x600-ad.jpg);
 	border: 1px black solid;
 	margin: 10px auto;
 	text-align: center;
@@ -69,6 +70,7 @@ body {
 .ad2 {
 	width: 300px;
 	height: 250px;
+	background-image: url(../img/300x250-ad.png);
 	border: 1px black solid;
 	margin: 10px;
 	text-align: center;
@@ -77,6 +79,7 @@ body {
 .ad3 {
 	width: 728px;
 	height: 90px;
+	background-image: url(../img/728x90-ad.png);
 	border: 1px black solid;
 	margin: 10px;
 	text-align: center;
