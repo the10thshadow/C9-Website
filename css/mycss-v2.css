@@ -83,6 +83,7 @@ body {
 	height: 90px;
 	background-image: url(../img/728x90-ad.png);
 	border: 1px black solid;
+	background-size: 100%;
 	margin: 10px;
 	background-repeat: no-repeat;
 	text-align: center;
