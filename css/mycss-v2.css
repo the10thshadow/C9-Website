@@ -627,6 +627,7 @@ input {
     padding: 7px 15px;
     font-size: 14px;
     font-weight: 400;
+	background-color: #ff7041;
     margin:15px;
     color: white;
     vertical-align: middle;
@@ -638,10 +639,10 @@ input {
 	
 }
 .buttonInput:hover {
-	background-color: #ff7041;
+	background-color: white;
 }
 .buttonInput:hover > span {
-	color: white;
+	color: #ff7041;
 }
 .buttonInputHidden {
     visibility:hidden;
@@ -657,7 +658,7 @@ input {
 
 }
 .buttonInput span {
-    color:#ff7041;
+    color:white;
 	-webkit-transition: color 0.2s ease-out;
 	-moz-transition: color 0.2s ease-out;
 	-ms-transition: color 0.2s ease-out;
@@ -811,7 +812,8 @@ input {
 	border: 1px solid #ff7041;
 	border-radius: 2px;
 	padding: 10px 15px;
-	color:#ff7041;
+	background-color: #ff7041;
+	color:white;
 	font-size: 14px;
 	margin-top:10px;
 	font-weight: bold;
@@ -827,8 +829,8 @@ input {
 	transition: color 0.2s ease-out;
 }
 .articleButton:hover {
-	background-color: #ff7041;
-	color: white;
+	background-color: white;
+	color: #ff7041;
 }
 
 
