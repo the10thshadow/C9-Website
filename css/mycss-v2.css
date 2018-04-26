@@ -593,16 +593,13 @@ input {
 	-moz-appearance: initial;
 	-ms-appearance:initial;
 	-o-appearance: initial; 
-	border:1px solid #CCCCCC;
+	border:1px solid #377CB5;
 	border-radius: 0 4px 4px 0;
-	float: left;
 	padding: 6.5px 1px 7px 10px;
-	display: block;
+	display: inline;
 	font-size:14px;
 	font-weight:400;
 	color:white;
-	overflow: hidden;
-   	background: url(img/arrow.png) no-repeat right #377cb5;
 }
 .dropdownStyle {
 	position: relative;
