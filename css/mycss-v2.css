@@ -463,7 +463,9 @@ nav {
 }
 .calcContainer {
 	margin-top:10px;
-	float:left;
+	padding-left: 0;
+	position: relative;
+	right: -50px;
 }
 .padded {
 	padding-left: -3px;
@@ -578,7 +580,7 @@ input {
 	border:1px solid #CCCCCC;
 	display: block;
 	float: left;
-	padding: 3px 10px 6px;
+	padding: 6px 10px 6px;
 	border-radius: 0 4px 4px 0;
 	font-size:14px;
 	font-weight:400;
@@ -708,7 +710,17 @@ input {
 	vertical-align: middle;
 }
 .calcForm {
-	
+	margin: 10px auto;
+	box-sizing: border-box;
+	border: 1px #cccccc solid;
+	border-radius: 4px;
+	padding: 20px;
+}
+.inputFix {
+	border-radius: 0px 4px 4px 0px;
+	line-height: 20px;
+	border-color: #377CB5;
+	border-left: none;
 }
 .borderCalc {
     border-radius: 4px;

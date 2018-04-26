@@ -217,14 +217,15 @@
         <div class="col-3 floatLeft">
             <div class="ad1"></div>
 		</div>
-		<div class="col-9 floatLeft calcForm">
+		<div class="col-8 floatRight calcForm">
 			<form class="calcContainer">
-				<div class="col-12 floatLeft">
+				<div>
+					<div class="col-12 floatLeft">
 					<div class="col-3 floatLeft">
 						<label class="calcLabel col-12">Loan Amount</label>
 					</div>
 					<div class="col-7 floatLeft">
-						<input class="calcInput col-12" type="number" id="hAmmount" name="hAmmount" placeholder="0.00$">
+						<input class="calcInput col-12 inputFix" type="number" id="hAmmount" name="hAmmount" placeholder="0.00$">
 					</div>
 				</div>
 				<div class="col-12 floatLeft">
@@ -232,7 +233,7 @@
 						<label class="calcLabel col-12">Term</label>
 					</div>
 					<div class="col-5 floatLeft">
-						<input class="calcInput col-12" type="number" id="hTerm" name="hTerm" placeholder="25">
+						<input class="calcInput col-12 inputFix" type="number" id="hTerm" name="hTerm" placeholder="25">
 					</div>
 					<div class="col-2 floatLeft">
 						<select class="col-12">
@@ -246,7 +247,7 @@
 						<label class="calcLabel col-12">Interest</label>
 					</div>
 					<div class="col-7 floatLeft">
-						<input class="calcInput col-12" type="number" id="hInterest" name="hInterest" placeholder="3.5%">
+						<input class="calcInput col-12 inputFix" type="number" id="hInterest" name="hInterest" placeholder="3.5%">
 					</div>
 				</div>
 				<div class="col-12 floatLeft">
@@ -254,7 +255,7 @@
 						<label class="calcLabel col-12">Down Payment</label>
 					</div>
 					<div class="col-7 floatLeft">
-						<input class="calcInput col-12" type="number" id="hDownPay" name="hDownPay" placeholder="1000.00$">
+						<input class="calcInput col-12 inputFix" type="number" id="hDownPay" name="hDownPay" placeholder="1000.00$">
 					</div>
 				</div>
 				<div class="col-12 floatLeft">
@@ -262,7 +263,7 @@
 						<label class="calcLabel col-12">Loan Start Date</label>
 					</div>
 					<div class="col-7 floatLeft">
-						<input class="calcInput col-12" type="date" id="hDate" name="hDate">
+						<input class="calcInput col-12 inputFix dateInput" type="date" id="hDate" name="hDate">
 					</div>
 				</div>
 				<div class="col-12 floatLeft">
@@ -286,8 +287,10 @@
 						<button type="reset" class="calcButtonReset col-12" id="hReset" name="hReset">Reset</button>
 					</div>
 				</div>
+				</div>
 			</form>
-		</div></div>
+		</div>
+		</div>
         <div class="clearFloat">
             <footer class="centered">
                 <p>© 2018 LoanPaymentsCalculator.com<br>Terms and Conditions | Privacy Policy | Accessibility</p>
