@@ -1,0 +1,234 @@
+﻿*{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+.paddigR20{
+	padding-right:20px;
+}
+
+.paddigL20{
+	padding-left:20px;
+}
+
+.paddingT20{
+	padding-top:20px;
+}
+
+.paddingB20{
+	padding-bottom:20px;
+}
+
+header{
+  background:#2e3a50;
+}
+
+.menu{
+	width:900px;
+	margin:auto;
+	padding:25px 0 25px;
+}
+
+.mainMenu{
+	width:100%;
+	background:#444444;
+	margin:auto;
+}
+
+.mainMenu ul{
+	text-align: center;
+}
+
+.mainMenu ul li{
+	display:inline-block;
+}
+
+.mainMenu ul li a{
+	display: block;
+	padding: 15px 15px;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 400
+}
+
+.mainMenu ul li:hover{
+	background:#5585bd;
+}
+
+.ad1{
+	width:650px;
+	height:100px;
+	background:#DDDDDD;
+	text-align:center;
+	margin:35px 0;
+}
+
+.loanCalculator{
+	background:#fafafa;
+}
+
+.loanCalculator h2{
+	color:#68748e;
+	font-weight:400;
+	font-size:22px;
+	padding-bottom:15px;
+}
+
+.loanCalcDesc{
+	font-size:14px;
+	color:#3d393b;
+	padding:0 10px 15px 0;
+}
+
+.titleBox{
+	background:#f7f7f7;
+	border:1px solid #CCCCCC;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	padding:7px 10px;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+}
+
+.loanInput{
+	border:1px solid #CCCCCC;
+	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
+	padding:7px 10px;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+}
+
+.calcButton{
+	background:#4d81bd;
+	color:#FFFFFF;
+	padding:10px;
+	text-transform:uppercase;
+	border-radius:3px;
+	width:300px;
+	display:block;
+	margin:15px 0px 30px 50px;
+}
+
+.amortizationButton{
+	background:#4d81bd;
+	color:#FFFFFF;
+	padding:10px;
+	text-transform:uppercase;
+	border-radius:3px;
+	width:100%;
+	display:block;
+}
+
+.graphPrice{
+	text-align:center;
+	font-size:36px;
+	font-weight:400;
+}
+
+.monthlyPay{
+	text-align:center;
+	color:#507baa;
+	text-transform:uppercase;
+}
+
+.formTitle{
+	text-align:center;
+	padding:15px 0;
+	color:#68748e;
+	font-weight:400;
+	font-size:22px;
+}
+
+.formDesc{
+	font-size:13px;
+	color:#3d393b;
+	text-align:center;
+	padding:5px 10px 20px;
+}
+
+.contactForm{
+	background:#fafafa;
+	padding:10px 0 20px;
+}
+
+.contactInputs{
+	border:1px solid #CCCCCC;
+	padding:7px 10px;
+	font-size:14px;
+	font-weight:400;
+	color:#3d393b;
+	display:block;
+	margin:20px auto;
+	width:275px;
+}
+
+.contactButton{
+	display:block;
+	background:#4d81bd;
+	color:#FFFFFF;
+	padding:10px;
+	text-transform:uppercase;
+	border-radius:3px;
+	width:300px;
+	display:block;
+	margin:50px auto 15px;
+}
+
+.articleWrap{
+	background:#fafafa;
+	margin:50px auto;
+}
+
+.articleSection{
+    padding:15px;
+    color: #68748e;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.footer{
+	margin:auto;
+	padding:25px 0 25px;
+	background:#2e3a50;
+	color:#FFFFFF
+}
+
+.footerMenu{
+	width:100%;
+	margin:auto;
+}
+
+.footerMenu ul{
+	text-align: center;
+}
+
+.footerMenu ul li{
+	display:inline-block;
+}
+
+.footerMenu ul li a{
+	display: block;
+	padding: 7px 15px;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 400;
+	border-right:1px solid #FFFFFF;
+}
+
+.articles{
+	text-align:center;
+	border:1px solid #DDDDDD;
+	background:#FFFFFF;
+}
+
+.articleTitle{
+	color: #68748e;
+    font-weight: 400;
+	padding:7px 0;
+}
+
+
+
