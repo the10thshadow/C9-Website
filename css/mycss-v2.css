@@ -22,6 +22,7 @@ h2 {
 h3.blue {
 	color:#377CB5;
 	font-weight: 400;
+	padding-top: 45px;
 }
 .container {
 	background-color:  none;
@@ -667,6 +668,41 @@ input {
 }
 .labelWidth {
 	width:50%;
+}
+.articleHead {
+	color:#ff7041;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+.articleText {
+	padding: 0 15px;
+}
+.articleImg {
+	width: 250px;
+	padding-top:5px;
+}
+.subHeadText {
+	color: #6c6c6c;
+	font-weight: 400;
+}
+.articleDiv p {
+	font-size: 16px;
+	color: #6c6c6c;
+	font-family: "Open Sans", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-weight: lighter;
+	
+}
+.articleDiv {
+	padding: 0 20px 20px 0;
+}
+.articleButton {
+	border-radius: 2px;
+	background-color: #ff7041;
+	padding: 10px 15px;
+	color:white;
+	font-size: 14px;
+	margin-top:10px;
+	font-weight: bold;
 }
 
 
