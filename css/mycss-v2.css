@@ -10,14 +10,18 @@
 
 }
 * {
-    font-family: "Open-Sans",sans-serif;
+    font-family: "Open Sans",sans-serif;
 }
 body {
 	background-color: white;
-	font-family: "Open-Sans", "Gill Sans MT", Helvetica, "Myriad Pro", "DejaVu Sans Condensed", "Gill Sans", Arial, "sans-serif"
+	font-family: "Open Sans", "Gill Sans MT", Helvetica, "Myriad Pro", "DejaVu Sans Condensed", "Gill Sans", Arial, "sans-serif"
 }
 h2 {
     color: #377CB5;
+}
+h3.blue {
+	color:#377CB5;
+	font-weight: 400;
 }
 .container {
 	background-color:  none;
@@ -347,10 +351,10 @@ nav {
 }
 .heroText {
     position:relative;
-    top:50px;
+    top:30px;
 }
 .heroText h2 {
-    font-family:"Open-Sans", sans-serif;
+    font-family:"Open Sans", sans-serif;
     font-size:36px; 
 
 }
@@ -610,7 +614,7 @@ input {
     background-color:white;
 	padding: 10px;
     position:relative;
-    top:60px;
+    top:40px;
 }
 .calcContent {
     background:rgba(240,240,240,1.00);
