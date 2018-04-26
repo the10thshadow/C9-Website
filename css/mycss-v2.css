@@ -589,6 +589,18 @@ input {
     margin:15px;
     color: white;
     vertical-align: middle;
+	-webkit-transition: background-color 0.2s ease-out;
+	-moz-transition: background-color 0.2s ease-out;
+	-ms-transition: background-color 0.2s ease-out;
+	-o-transition: background-color 0.2s ease-out; 
+	transition: background-color 0.2s ease-out;
+	
+}
+.buttonInput:hover {
+	background-color: #ff7041;
+}
+.buttonInput:hover > span {
+	color: white;
 }
 .buttonInputHidden {
     visibility:hidden;
@@ -605,6 +617,11 @@ input {
 }
 .buttonInput span {
     color:#ff7041;
+	-webkit-transition: color 0.2s ease-out;
+	-moz-transition: color 0.2s ease-out;
+	-ms-transition: color 0.2s ease-out;
+	-o-transition: color 0.2s ease-out; 
+	transition: color 0.2s ease-out;
 }
 .buttonInputReset {
 	background:hsla(207,53%,46%,0.75); 
@@ -709,13 +726,27 @@ input {
 	margin: 10px;
 }
 .articleButton {
+	border: 1px solid #ff7041;
 	border-radius: 2px;
-	background-color: #ff7041;
 	padding: 10px 15px;
-	color:white;
+	color:#ff7041;
 	font-size: 14px;
 	margin-top:10px;
 	font-weight: bold;
+	-webkit-transition: background-color 0.2s ease-out;
+	-moz-transition: background-color 0.2s ease-out;
+	-o-transition: background-color 0.2s ease-out;
+	-ms-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+	-webkit-transition: color 0.2s ease-out;
+	-moz-transition: color 0.2s ease-out;
+	-o-transition: color 0.2s ease-out;
+	-ms-transition: color 0.2s ease-out;
+	transition: color 0.2s ease-out;
+}
+.articleButton:hover {
+	background-color: #ff7041;
+	color: white;
 }
 
 
