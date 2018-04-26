@@ -536,8 +536,10 @@ input {
     border: 1px solid #CCCCCC;
     padding: 7px 10px 7px 0;
     border-radius: 4px;
+	box-sizing: border-box;
     font-size: 14px;
     font-weight: 400;
+	display: inline;
     color: #3d393b;
     margin: 15px;
     vertical-align: middle
@@ -671,10 +673,12 @@ input {
 	border:1px solid #377cb5;
 	border-radius: 4px 0 0 4px;
 	float: left;
+	box-sizing: border-box;
+	margin: 15px;
 	padding:8px 10px 7px 16px;
 	font-size:14px;
 	font-weight:400;
-	display: block;
+	display: inline;
 	color:white;
 	vertical-align: middle;
 }
