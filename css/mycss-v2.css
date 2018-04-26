@@ -669,11 +669,11 @@ input {
 	background:hsla(207,53%,46%,0.75); 
 }
 .calcButtonSubmit{
-	color: #ff7041;
+	color: white;
 	
 }
 .calcButtonSubmit:hover {
-	color: white;
+	color: #ff7041;
 }
 .calcButtonReset {
 	border: 1px solid #377CB5;
