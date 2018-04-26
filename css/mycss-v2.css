@@ -443,7 +443,7 @@ input {
 .calcSelector i:hover {
 	color: white;
 }
-.calcSelector p {
+.calcSelector p:hover {
 	color: white;
 }
 .selectorTextLine1 {
