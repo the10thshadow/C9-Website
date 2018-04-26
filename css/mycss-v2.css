@@ -433,6 +433,9 @@ input {
     text-align:center;
 	padding: 20px 0;
 }
+.calcSelector:hover {
+	background-color: #377CB5;
+}
 .calcSelector i {
 	padding-bottom: 10px;
 	color: #636362;
