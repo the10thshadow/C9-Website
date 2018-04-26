@@ -80,6 +80,30 @@ footer p {
     background-position: right;
 
 }
+.dropdown {
+    position: relative;
+	top: 30px;
+    display: inline-block;
+	border: 1px solid #c6c6c6;
+	border-radius: 4px;
+	padding: 0 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 15px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.imgLang {
+	width: 20px;
+}
+
 .inputBox {
 	border:1px solid black;
 }
