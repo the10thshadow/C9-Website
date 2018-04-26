@@ -580,7 +580,7 @@ input {
 	border:1px solid #CCCCCC;
 	display: block;
 	float: left;
-	padding: 6px 10px 6px;
+	padding: 6px 20px 6px;
 	border-radius: 0 4px 4px 0;
 	font-size:14px;
 	font-weight:400;
@@ -672,7 +672,6 @@ input {
 }
 .calcButtonSubmit{
 	color: #ff7041;
-	margin-right: 20px;
 	
 }
 .calcButtonSubmit:hover {
