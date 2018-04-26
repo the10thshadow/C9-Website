@@ -672,6 +672,7 @@ input {
 }
 .calcButtonSubmit{
 	color: #ff7041;
+	
 }
 .calcButtonSubmit:hover {
 	color: white;
