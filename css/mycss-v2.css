@@ -432,19 +432,36 @@ input {
     border-right:1px solid #377CB5;
     text-align:center;
 	padding: 20px 0;
+	-webkit-transition: background-color 0.3s ease-out;
+  	-moz-transition: background-color 0.3s ease-out;
+  	-o-transition: background-color 0.3s ease-out;
+  	transition: background-color 0.3s ease-out;
+}
+.calcSelector > i {
+	-webkit-transition: color 0.3s ease-out;
+  	-moz-transition: color 0.3s ease-out;
+  	-o-transition: color 0.3s ease-out;
+  	transition: color 0.3s ease-out;
+}
+.calcSelector > p {
+	-webkit-transition: color 0.3s ease-out;
+  	-moz-transition: color 0.3s ease-out;
+  	-o-transition: color 0.3s ease-out;
+  	transition: color 0.3s ease-out;
 }
 .calcSelector:hover {
 	background-color: #377CB5;
+	color: white;
+}
+.calcSelector:hover > i {
+	color:white;
+}
+.calcSelector:hover > p {
+	color:white;
 }
 .calcSelector i {
 	padding-bottom: 10px;
 	color: #636362;
-}
-.calcSelector i:hover {
-	color: white;
-}
-.calcSelector p:hover {
-	color: white;
 }
 .selectorTextLine1 {
 	font-family: "Open Sans","sofiapro-light","Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
