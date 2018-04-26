@@ -689,9 +689,9 @@ input {
 	padding: 0 15px;
 }
 .articleImg {
-	width: 250px;
-	padding-top:10px;
-	padding-bottom: 20px;
+	width: 255px;
+	padding-top:5px;
+	padding-bottom: 25px;
 }
 .subHeadText {
 	color: #6c6c6c;
