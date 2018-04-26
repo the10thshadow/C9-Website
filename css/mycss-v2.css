@@ -668,8 +668,33 @@ input {
 .buttonInputReset {
 	background:hsla(207,53%,46%,0.75); 
 }
+.calcButtonSubmit{
+	color: #ff7041;
+}
+.calcButtonSubmit:hover {
+	color: white;
+}
+.calcButtonReset {
+	border: 1px solid #377CB5;
+	background-color: none;
+    border-radius: 4px;
+    display:inline;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    margin:15px;
+    color: #377CB5;
+    vertical-align: middle;
+	-webkit-transition: background-color 0.2s ease-out;
+	-moz-transition: background-color 0.2s ease-out;
+	-ms-transition: background-color 0.2s ease-out;
+	-o-transition: background-color 0.2s ease-out; 
+	transition: background-color 0.2s ease-out;
+}.calcButtonReset:hover {
+	background-color: #377CB5;
+	color:white;
+}
 .calcLabel {
-	background:#377cb5;
 	border:1px solid #377cb5;
 	border-radius: 4px 0 0 4px;
 	float: left;
@@ -679,7 +704,7 @@ input {
 	font-size:14px;
 	font-weight:400;
 	display: inline;
-	color:white;
+	color:#377CB5;
 	vertical-align: middle;
 }
 .borderCalc {
