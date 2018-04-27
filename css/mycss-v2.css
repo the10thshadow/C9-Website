@@ -1049,6 +1049,12 @@ input {
 	font-style: italic;
     vertical-align: middle;
 }
+.ad2Borders {
+	padding: 30px 0;
+	border-bottom: 1px solid #377CB5;
+	border-top: 1px solid #377CB5;
+	margin: 40px 0;
+}
 
 
 /*Fixing an issue on desktop with alignment and columbs*/
