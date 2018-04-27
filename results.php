@@ -114,7 +114,8 @@
 			</div>
 		<div class="col-8 floatRight">
 		<div class="col-12 floatRight calcForm">
-			
+			<!-- Content goes here -->
+			<canvas id="myChart" width="400" height="400"></canvas>
 		</div>
 		<div class="paddingTop15">
 			<h2 class="aboutTextHead paddingTop15">What You Need to Know About Mortgages</h2>
