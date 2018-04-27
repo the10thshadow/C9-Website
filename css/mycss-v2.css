@@ -381,9 +381,34 @@ nav {
 }
 .searchBox {
 	line-height: 18px;
-	text-align: right;
-	border: 0.1px solid grey;
-	border-radius: 8px;
+	font-size: 16px;
+	margin-right: 0px !important;
+	border: 1px solid #377CB5 !important;
+	border-radius:4px !important;
+	margin-left: 0px !important;
+	display: block;
+    width: 300px;
+    height: 32px;
+    position: relative;
+    background-color: white;
+    text-align: right;
+    overflow: hidden;
+	
+}
+.searchBox > input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 2em;
+    bottom: 0;
+    background-color: transparent, white;
+    border-width: 0;
+    border-right: none;
+    outline: none;
+}
+.searchIcon {
+	padding: 7px;
+	color:#377Cb5;
 }
 .clearRight {
 	clear: right;
@@ -934,6 +959,81 @@ input {
 .bottomBorder {
 	border-bottom: 1px solid #377CB5;
 	padding-bottom: 105px;
+}
+.articlePara {
+	color: #4b4b4b;
+}
+.articleHead {
+	color:#4b4b4b;
+	padding: 30px 0 0px 0;
+}
+.relatedArticles {
+	padding-left: 20px; 
+	list-style-type:circle;
+	margin-bottom: 40px;
+}
+.relatedArticles li a {
+	color: #4b4b4b;
+	font-weight: bold;
+	text-decoration: none;
+}
+.searchButton img {
+	padding-top: 5px;
+	padding-right: 8px;
+	width: 20px;
+}
+.searchButton {
+	line-height: 18px;
+	position: relative;
+	top:15px;
+	right:25px;
+	height: 34px;
+	border: 1px solid #377CB5;
+	border-left: none;
+	background-color: white;
+	border-radius: 0 4px 4px 0;
+}
+.searchField {
+	width: 300px;
+}
+.searchForm {
+	min-width: 300px;
+	padding: 10px 0;
+	margin-bottom: 30px;
+}
+.articleBox {
+	min-width: 300px;
+	margin-bottom: 30px;
+	padding: 0px 0;
+}
+.articleCategoryTitle {
+	color:#ff7041;
+	font-weight: bolder;
+	text-align: center;
+	border: 1px solid #377CB5;
+	border-radius: 4px;
+	padding:5px 0;
+}
+.articleCategory {
+	font-weight: lighter;
+	text-align: left;
+	border: 1px solid #377CB5;
+	border-radius: 4px;
+	padding:5px 0;	
+}
+.articleCategory a {
+	text-decoration: none;
+	color:#4b4b4b;
+	padding: 0 40px;
+}
+.searchInput {
+    font-size: 15px;
+    font-weight: lighter;
+	display: inline;
+    color: #3d393b;
+    margin: 0px;
+	font-style: italic;
+    vertical-align: middle;
 }
 
 
