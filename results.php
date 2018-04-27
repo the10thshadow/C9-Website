@@ -98,7 +98,7 @@
 		<div class="fullContainerCalcMortgage"> 
 				<!-- Banner background image one goes here -->
 				<div class="container bannerTextBG">
-				<h2 class="bannerText">Mortgage Loan Calculator</h2>
+				<h2 class="bannerText">Mortgage Loan Calculator<br>Summary Results</h2>
 			</div>
 			</div>
 	</div>
