@@ -1055,6 +1055,9 @@ input {
 	border-top: 1px solid #377CB5;
 	margin: 40px 0;
 }
+.articleBG {
+	background-color:hsla(0,11%,97%,1.00);
+}
 
 
 /*Fixing an issue on desktop with alignment and columbs*/
