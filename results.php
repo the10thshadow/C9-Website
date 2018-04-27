@@ -108,77 +108,8 @@
 			</div>
 		<div class="col-8 floatRight">
 		<div class="col-12 floatRight calcForm">
-		<form class="calcContainer">
-				<div>
-				<div class="col-12 floatLeft">
-						<div class="col-3 floatLeft">
-						<label class="calcLabel col-12">Loan Amount</label>
-					</div>
-						<div class="col-7 floatLeft">
-						<input class="calcInput col-12 inputFix" type="number" id="hAmmount" name="hAmmount" placeholder="0.00$">
-					</div>
-					</div>
-				<div class="col-12 floatLeft">
-						<div class="col-3 floatLeft">
-						<label class="calcLabel col-12">Term</label>
-					</div>
-						<div class="col-5 floatLeft">
-						<input class="calcInput col-12 inputFix" type="number" id="hTerm" name="hTerm" placeholder="25">
-					</div>
-						<div class="col-2 floatLeft">
-						<div class="calcDropdown">
-						<select class="col-12" id="radiusDropdown">
-						<div>
-						<option value="Y">Years</option>
-						</div>
-						<div>
-						<option value="Months">Months</option>
-						</div>
-					</select>
-					</div>
-			</div>
-				</div>
-				<div class="col-12 floatLeft">
-				<div class="col-3 floatLeft">
-						<label class="calcLabel col-12">Interest</label>
-					</div>
-				<div class="col-7 floatLeft">
-						<input class="calcInput col-12 inputFix" type="number" id="hInterest" name="hInterest" placeholder="3.5%">
-					</div>
-			</div>
-				<div class="col-12 floatLeft">
-				<div class="col-3 floatLeft">
-						<label class="calcLabel col-12">Down Payment</label>
-					</div>
-				<div class="col-7 floatLeft">
-						<input class="calcInput col-12 inputFix" type="number" id="hDownPay" name="hDownPay" placeholder="1000.00$">
-					</div>
-			</div>
-				<div class="col-12 floatLeft">
-				<div class="col-5 inline-fix">
-						<input type="text" class="calcInput col-12 calcSubInput" id="hName" name="hName" placeholder="Name">
-					</div>
-				<div class="col-5 inline-fix">
-						<input type="email" class="calcInput col-12 calcSubInput" id="hEmail" name="hEmail" placeholder="Email">
-					</div>
-			</div>
-				<div class="col-12 floatLeft">
-				<div class="col-10 calcSub">
-						<input type="checkbox" id="hSubscribe" name="hSubscribe" checked>
-						<label class="blueText">Send results to my email and receive other special related offers and promotions.</label>
-					</div>
-			</div>
-				<div class="col-12 floatLeft">
-				<div class="col-5 floatLeft">
-						<button type="submit" class="buttonInput calcButtonSubmit col-12" id="hSubmit" name="hSubmit">Compute</button>
-					</div>
-				<div class="col-5 floatLeft">
-						<button type="reset" class="calcButtonReset col-12" id="hReset" name="hReset">Reset</button>
-					</div>
-			</div>
-				</div>
-			</form>
-	</div>
+			
+		</div>
 		<div class="paddingTop15">
 			<h2 class="aboutTextHead paddingTop15">What You Need to Know About Mortgages</h2>
 			<p class="aboutText">
