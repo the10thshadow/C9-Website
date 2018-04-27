@@ -1011,17 +1011,31 @@ input {
 	font-weight: bolder;
 	text-align: center;
 	border: 1px solid #377CB5;
-	border-radius: 4px;
+	border-radius: 4px 4px 0 0;
 	padding:5px 0;
 }
 .articleCategory {
 	font-weight: lighter;
 	text-align: left;
 	border: 1px solid #377CB5;
-	border-radius: 4px;
+	border-top: none;
+	border-radius:0 0;
 	padding:5px 0;	
 }
 .articleCategory a {
+	text-decoration: none;
+	color:#4b4b4b;
+	padding: 0 40px;
+}
+.articleCategoryLast {
+	font-weight: lighter;
+	text-align: left;
+	border: 1px solid #377CB5;
+	border-top:none;
+	border-radius: 0 0 4px 4px;
+	padding:5px 0;
+}
+.articleCategoryLast a {
 	text-decoration: none;
 	color:#4b4b4b;
 	padding: 0 40px;
