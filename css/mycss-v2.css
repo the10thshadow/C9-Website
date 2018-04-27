@@ -893,6 +893,10 @@ input {
 	padding: 0 20px 20px 0px;
 	margin: 10px;
 }
+.articleDivBlog {
+	padding: 0 20px 0px 0px !important;
+	margin: 0px !important;
+}
 .articleButton {
 	border: 1px solid #ff7041;
 	border-radius: 2px;
@@ -1093,8 +1097,8 @@ input {
 .blogTitleText {
 	padding-left: 25px;
 	position: relative;
-	top:-55px;
-	left: 80px;
+	top:25px;
+	left: 0px;
 }
 .borderBottom {
 	border-bottom: 1px solid #377CB5;
