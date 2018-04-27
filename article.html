@@ -155,6 +155,7 @@
 </head>
 
 <body onLoad="CheckMobileNav ()">
+	<!-- Header & Nav Starts here -->
 	<div class="fullContainer">
         <div>
             <header>
@@ -169,6 +170,7 @@
 							</div>
 							</a>
                         </div>
+						<!-- Lang dropdown -->
 						<div class="floatRight">
 							<div class="dropdown">
 								<span><img class="imgLang" src="img/UK_Flag.png" alt=""></span>
@@ -202,169 +204,42 @@
                 </div>
             </div>
         </div>
-        <div class="fullContainer">
-            <div class="bannerFullLanding">
-                <!-- Banner background image one goes here -->
-                <div class="container">
-                    <form class="col-12" action="index.php" method="get" onsubmit="return CalcFormIntercept()">
-                        <div class="col-6">
-                            <div class="centered heroText">
-                                <h2 style="text-align:left">Plan for the <span class="orangeText">future</span>.</h2>
-                                <h2 style="text-align:left">Know how much <span class="orangeText">you</span>'re paying.</h2>
-                            </div>
-                            <div class="col-12 borderCalc">
-                                <!-- Main form goes here // middle of the container floating // -->
-                                <div class="col-12">
-                                    <div class="col-5 inline-fix">
-                                        <input type="number" data-toggle="tooltipAmount" class="calcInput fullWidthInput" placeholder="Amount" id="hAmmount" name="hAmmount" />
-                                    </div>
-                                    <div class="col-1 inline-fix"></div>
-                                    <div class="col-5 inline-fix">
-                                        <input type="text" data-toggle="tooltipName" class="calcInput fullWidthInput" placeholder="Full Name" id="hName" name="hName" />
-                                    </div> 
-                                </div>
-                                                      
-                                <div class="col-12">
-                                    <div class="col-5 inline-fix">
-                                        <input type="text" data-toggle="tooltipTerm" class="calcInput fullWidthInput" placeholder="Amortization" id="hTerm" name="hTerm" />
-                                    </div>
-                                    <div class="col-1 inline-fix"></div>
-                                    <div class="col-5 inline-fix">
-                                        <input type="email" data-toggle="tooltipEmail" class="calcInput fullWidthInput" placeholder="Email" id="hEmail" name="hEmail" />
-                                    </div>
-                                </div>
-                                                            
-                                <div class="col-12">
-                                    <div class="col-5 inline-fix">
-                                        <input type="text" data-toggle="tooltipInterest" class="calcInput fullWidthInput" placeholder="Interest Rate %" id="hInterest" name="hInterest" />
-                                    </div>
-                                    <div class="col-1 inline-fix"></div>
-                                    <div class="col-5 inline-fix checkboxFix">
-                                        <input type="checkbox" id="hSubscribe" name="hSubscribe" checked />
-                                        <label class="blueText">Subscribe to our newsletter and special promotions.</label>
-                                    </div>
-                                </div>
-                                <div class="col-7 inline-fix">
-                                    <div class="col-12">
-                                        <div class="col-12">
-                                            <button class="buttonInput col-9" type="submit"><span>Calculate</span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="fullContainer">
-            <div class="col-12">
-                <!-- Link buttons for calulators goes here -->
-                <div class="col-1andhalf calcSelector floatLeft">
-					<i class="fa fa-home fa-3x"></i>
-					<p class="selectorTextLine1">Mortgage</p>
-					<p class="selectorTextLine2">Loan Payment</p>
-					<p class="selectorTextLine2">Calculator</p>
-				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
-					<i class="fa fa-car fa-3x"></i>
-					<p class="selectorTextLine1">Car</p>
-					<p class="selectorTextLine2">Loan Payment</p>
-					<p class="selectorTextLine2">Calculator</p>
-				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
-					<i class="fa fa-user fa-3x"></i>
-					<p class="selectorTextLine1">Personal</p>
-					<p class="selectorTextLine2">Loan Payment</p>
-					<p class="selectorTextLine2">Calculator</p>
-				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
-					<i class="fa fa-graduation-cap fa-3x"></i>
-					<p class="selectorTextLine1">School</p>
-					<p class="selectorTextLine2">Loan Payment</p>
-					<p class="selectorTextLine2">Calculator</p>
-				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
-					<i class="fa fa-briefcase fa-3x"></i>
-					<p class="selectorTextLine1">Business</p>
-					<p class="selectorTextLine2">Loan Payment</p>
-					<p class="selectorTextLine2">Calculator</p>
-				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
-					<i class="fa fa-desktop fa-3x"></i>
-					<p class="selectorTextLine1">Equipement</p>
-					<p class="selectorTextLine2">Loan Payment</p>
-					<p class="selectorTextLine2">Calculator</p>
-				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
-					<i class="fa fa-credit-card fa-3x"></i>
-					<p class="selectorTextLine1">Credit Card</p>
-					<p class="selectorTextLine2">Loan Payment</p>
-					<p class="selectorTextLine2">Calculator</p>
-				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
-					<i class="fa fa-money-bill-alt fa-3x"></i>
-					<p class="selectorTextLine1">Line of Credit</p>
-					<p class="selectorTextLine2">Loan Payment</p>
-					<p class="selectorTextLine2">Calculator</p>
-				</div>
-            </div>
-        </div>
-        <div class="fullContainer clearFloat">
-            <div class="bannerFullLanding2">
-                <!-- Banner background image one goes here -->
-                <div class="container aboutTextBox col-6">
-                    <h2>About <br/> Loan Payment Calculator</h2>
-                    <div class="orangeLine"></div>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container col-12">
-            <div class="centered">
-                <h3 class="blue">Learn Tips and Tricks on Managing Your Loans</h3>
-				<p class="subHeadText">Our blog provides the best articles for you to learn tips and tricks on managing your loans.</p>
-				<p class="subHeadText">So be sure to always check back!</p><!-- centered text-->
-				<p class="desktop">Desktop</p>
-                <p class="tablet">Tablet</p>
-                <p class="mobile">Mobile</p>
-            </div>
-            <div class="col-8 floatLeft"> <!-- spanned inside div -->
-                <div class="col-12 articleDiv clearFloat">
-					<div class="col-4 floatLeft">
-						<img class="articleImg" src="img/finances.jpg" alt="">
+		<!-- End of Header & nav -->
+		
+        <!-- Content Starts here -->
+		<div class="container col-12">
+			<div class="col-7 floatLeft">
+				<div class="col-12">
+					<h2 class="articleTitle">How to Set Up a Loan Calculator</h2>
+					<div>
+						<img class="articlePageImg" src="img/assets/about.jpg" alt="">
 					</div>
-                	<div class="col-7 floatLeft articleText">
-                  	  <h3 class="articleHead">How to setup a loan Calendar</h3>
-                    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
-                    	<button class="articleButton"><span>Read more</span></button>
-                	</div>
 				</div>
-				<div class="col-12 articleDiv clearFloat">
-					<div class="col-4 floatLeft">
-						<img class="articleImg" src="img/pencil-work.jpg" alt="">
+				<div class="col-12 paddingTop15">
+					<div class="bottomBorder col-12">
+						<div class="floatLeft">
+						<img class="avatarIMG" src="img/avatar/internt_web_technology-13-512.png" alt="">
 					</div>
-                	<div class="col-7 floatLeft articleText">
-                    	<h3 class="articleHead">Learn to maximize your loans</h3>
-                    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
-                    	<button class="articleButton"><span>Read more</span></button>
-                	</div>
-				</div>
-				<div class="col-12 articleDiv clearFloat">
-					<div class="col-4 floatLeft">
-						<img class="articleImg" src="img/pencil-work.jpg" alt="">
+					<div class="floatLeft padding10">
+						<i class="writtenByText">Written by</i>
+						<p class="writtenByName">Chelsey Chen</p>
+						<i class="writtenByText">April 30 2018 | 0 Comments</i>
 					</div>
-                	<div class="col-7 floatLeft articleText">
-                    	<h3 class="articleHead">Learn to maximize your loans</h3>
-                    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
-                    	<button class="articleButton"><span>Read more</span></button>
-                	</div>
+					</div>
 				</div>
-            </div>
-            <div class="ad1 col-4 floatRight"><!-- half page ad goes here--></div>
+				<div class="col-12">
+					
+				</div>
+			</div>
+			<div class="col-4 floatRight">
+				<div class="floatRight"></div>
+			</div>
+		
+		
+		
+		<!-- Content Ends here -->
         </div>
+		<!-- Footer -->
         <div class="clearFloat">
             <footer class="centered">
                 <p>© 2018 LoanPaymentsCalculator.com<br>Terms and Conditions | Privacy Policy | Accessibility</p>

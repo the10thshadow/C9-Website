@@ -912,6 +912,29 @@ input {
 .readMoreBTN {
 	margin-left: 0px;
 }
+.articlePageImg {
+	width: 100%;
+}
+.articleTitle {
+	font-size: 38px;
+	letter-spacing: 2px;
+	text-align: center;
+	padding: 20px 10px;
+}
+.avatarIMG {
+	width: 80px;
+}
+.writtenByText {
+	color: #4b4b4b;
+	font-size: 12px;
+}.writtenByName {
+	color:#ff7041;
+	font-weight: bold;
+}
+.bottomBorder {
+	border-bottom: 1px solid #377CB5;
+	padding-bottom: 105px;
+}
 
 
 /*Fixing an issue on desktop with alignment and columbs*/
