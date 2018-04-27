@@ -593,7 +593,7 @@ input {
     font-weight: 400;
 	display: inline;
     color: #3d393b;
-    margin: 15px;
+    margin:15px 15px 0;
     vertical-align: middle
 
 }
@@ -1103,6 +1103,12 @@ input {
 .borderBottom {
 	border-bottom: 1px solid #377CB5;
 }
+.showMoreBTN {
+	width: 65%;
+}
+
+
+
 
 
 /*Fixing an issue on desktop with alignment and columbs*/
