@@ -545,13 +545,13 @@ input {
   	-o-transition: background-color 0.3s ease-out;
   	transition: background-color 0.3s ease-out;
 }
-.calcSelector > i {
+.calcSelector > a > i {
 	-webkit-transition: color 0.3s ease-out;
   	-moz-transition: color 0.3s ease-out;
   	-o-transition: color 0.3s ease-out;
   	transition: color 0.3s ease-out;
 }
-.calcSelector > p {
+.calcSelector > a > p {
 	-webkit-transition: color 0.3s ease-out;
   	-moz-transition: color 0.3s ease-out;
   	-o-transition: color 0.3s ease-out;
@@ -561,13 +561,13 @@ input {
 	background-color: #377CB5;
 	color: white;
 }
-.calcSelector:hover > i {
+.calcSelector:hover > a > i {
 	color:white;
 }
-.calcSelector:hover > p {
+.calcSelector:hover > a > p {
 	color:white;
 }
-.calcSelector i {
+.calcSelector a i {
 	padding-bottom: 10px;
 	color: #636362;
 }
@@ -1106,7 +1106,9 @@ input {
 .showMoreBTN {
 	width: 65%;
 }
-
+.barLinks {
+	text-decoration: none;
+}
 
 
 
