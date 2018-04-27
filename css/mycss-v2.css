@@ -155,6 +155,21 @@ input:focus:-moz-placeholder {
     -webkit-transition: color 0.1s ease-in-out;
 }
 
+.lightFont{
+	font-weight: lighter !important;
+}
+.boldFont {
+	font-weight: bolder !important;
+}
+.leftAlign {
+	text-align: left !important;
+}
+.rightAlign {
+	text-align: right !important;
+}
+.centerAlign {
+	text-align: center !important;
+}
 input::-moz-placeholder { /* Mozilla Firefox 19+ */
     color: #377CB5;
     opacity: 1;
@@ -1057,6 +1072,32 @@ input {
 }
 .articleBG {
 	background-color:hsla(0,11%,97%,1.00);
+}
+.rectangle {
+	width:100%;
+	height:125px;
+	background: white;
+	opacity: 0.6;
+	position: relative;
+	top:-130px;
+}
+.hoverOverlay {
+	position: relative;
+	top:-240px;
+	left: 30px;
+}
+.blogArticleTitle {
+	color :#337CB5;
+	padding-top: 0px;
+}
+.blogTitleText {
+	padding-left: 25px;
+	position: relative;
+	top:-55px;
+	left: 80px;
+}
+.borderBottom {
+	border-bottom: 1px solid #377CB5;
 }
 
 
