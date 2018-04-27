@@ -50,6 +50,12 @@
 			}
 		}
 	</script>
+		
+		
+	<script src="path/to/chartjs/dist/Chart.js"></script>
+	<script>
+    	var myChart = new Chart(ctx, {...});
+	</script>
 	</head>
 
 	<body onLoad="CheckMobileNav ()">
