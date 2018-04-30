@@ -256,7 +256,11 @@ input:focus:-ms-input-placeholder {
 
 
 /*End of testing code pieces*/
-
+.hamburger {
+  position: absolute;
+  top: 5px;
+  right: -10px;
+}
 nav {
 	background-color:#377CB5;
 }
@@ -481,7 +485,7 @@ nav {
     padding: 30px 45px;
 }
 .aboutTextBox p {
-    font-family:"Open-Sans",sans-serif;
+    font-family:"Open Sans",sans-serif;
     font-size:17px;
     text-align:left;
     color:#6c6c6c;
@@ -1274,10 +1278,162 @@ input {
   .logo-name-sec {
   	display: none;
   }
+  .height-fix-tab {
+    vertical-align: text-top;
+    position: relative;
+    top: -43px;
+  }
+  .calcSelector {
+  	  padding: 30px 0;
+  }
+  .firstLineTab {
+    border-bottom: 1px solid #377CB5;
+  }
+  .aboutTextBox {
+      text-align: center;
+      background-color: hsla(0,0%,100%,0.90);
+      border-radius:4px;
+      position:relative;
+      top:-10px;
+      height:100%;
+      padding: 30px 45px;
+  }
+  .articleText {
+    	padding: 0;
+  }
+  .articleImg {
+    	width: 255px;
+    	padding-top:10px;
+    	padding-bottom: 25px;
+  }
+  .ad1-tab {
+    	width: 728px;
+    	height: 90px;
+    	background-image: url(../img/728x90-ad.jpg);
+    	background-size: 100%;
+    	background-repeat: no-repeat;
+    	text-align: center;
+  }
+  .calcDiv {
+    position: relative;
+    left: -30px;
+  }
 }
+
+/*Fixing an issue on tablet with alignment and columbs*/
+/*Small tablet Format*/
+@media (min-width:755px) and (max-width:825px)
+{
+  .orangeLine {
+    width:80px;
+    text-align:center;
+    margin:15px auto;
+  }
+  .articleText {
+      padding: 0;
+      position: relative;
+      left: 20px;
+  }
+  .articleImg {
+      width: 255px;
+      padding-top:10px;
+      padding-bottom: 25px;
+  }
+
+}
+@media (min-width:640px) and (max-width:755px)
+{
+  .orangeLine {
+    width:80px;
+    text-align:center;
+    margin:5px auto;
+  }
+  .articleText {
+      padding: 0;
+      position: relative;
+      left: 50px;
+  }
+  .articleImg {
+      width: 255px;
+      padding-top:10px;
+      padding-right: 10px;
+      padding-bottom: 25px;
+  }
+  .col-tab-mini-fix {
+    width: 100% !important;
+  }
+  .col-tab-mini-fix .ad1 {
+    display: none;
+  }
+  .tab-mini-col-12 {
+  width: 98% !important;
+  text-align: center;
+  }
+  .subForm {
+    position: relative;
+    left: 30px;
+  }
+}
+
 
 /*Mobile */
 @media (max-width:640px)
 {
-
+  .calcSelector {
+    height: 300px;
+    padding-top: 80px;
+  }
+  .fullContainerMob {
+    height: 600px;
+  }
+  .articleDiv {
+    padding: 20px 0;
+  }
+  .articleImg {
+    width: 100%;
+  }
+  .articleButton {
+    margin-bottom: 20px;
+  }
+  .allSelectorMob {
+    border-bottom: 1px solid #377CB5;
+    border-right: 0px;
+  }
+  .aboutTextBox {
+      width: 100%;
+      height: 90%;
+      padding-left: 0px;
+      padding-right: 0px;
+      top:0px;
+  }
+  .orangeLine {
+    display: none;
+  }
+  .borderCalc {
+      border-radius: 0px;
+      background-color:white;
+  	  padding: 0px;
+      position:relative;
+      top:40px;
+  }
+  .articleText {
+      padding: 0;
+      position: relative;
+      left: 0px;
+  }
+  .articleImg {
+      width: 100%;
+      position: relative;
+      left: -10px;
+      padding-top:10px;
+      padding-right: 0px;
+      padding-left: 0px;
+      padding-bottom: 25px;
+  }
+  .articleDiv {
+    padding: 0px;
+  }
+  .ad1, .ad2, .ad3 {
+    display: none !important;
+  }
 }

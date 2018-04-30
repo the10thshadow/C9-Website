@@ -169,12 +169,14 @@
 							</div>
 							</a>
             </div>
-            <div class="mob-nav-icon tablet mobile" onclick="navToggle(this)">
+            <div class="floatRight">
+              <div class="mob-nav-icon tablet mobile hamburger" onclick="navToggle(this)">
     						<div class="bar1"></div>
     						<div class="bar2"></div>
     						<div class="bar3"></div>
     					</div>
-						<div class="floatRight">
+            </div>
+						<div class="floatRight col-mob-1">
 							<div class="dropdown desktop">
 								<span><img class="imgLang" src="img/UK_Flag.png" alt=""></span>
 								<div class="dropdown-content">
@@ -217,7 +219,7 @@
                 <!-- Banner background image one goes here -->
                 <div class="container">
                     <form class="col-12" action="results.php" method="GET" onsubmit="return CalcFormIntercept()">
-                        <div class="col-6">
+                        <div class="col-6 col-tab-8 col-mob-12">
                             <div class="centered heroText">
                                 <h2 style="text-align:left">Plan for the <span class="orangeText">future</span>.</h2>
                                 <h2 style="text-align:left">Know how much <span class="orangeText">you</span>'re paying.</h2>
@@ -230,23 +232,23 @@
                                     </div>
                                     <div class="col-1 inline-fix"></div>
                                     <div class="col-5 inline-fix">
-                                        <input type="text" data-toggle="tooltipName" class="calcInput fullWidthInput" placeholder="Full Name" id="hName" name="hName" />
+                                        <input type="text" class="calcInput fullWidthInput" placeholder="Full Name" id="hName" name="hName" />
                                     </div>
                                 </div>
 
                                 <div class="col-12">
                                     <div class="col-5 inline-fix">
-                                        <input type="text" data-toggle="tooltipTerm" class="calcInput fullWidthInput" placeholder="Amortization" id="hTerm" name="hTerm" />
+                                        <input type="text" class="calcInput fullWidthInput" placeholder="Amortization" id="hTerm" name="hTerm" />
                                     </div>
                                     <div class="col-1 inline-fix"></div>
                                     <div class="col-5 inline-fix">
-                                        <input type="email" data-toggle="tooltipEmail" class="calcInput fullWidthInput" placeholder="Email" id="hEmail" name="hEmail" />
+                                        <input type="email" class="calcInput fullWidthInput" placeholder="Email" id="hEmail" name="hEmail" />
                                     </div>
                                 </div>
 
                                 <div class="col-12">
                                     <div class="col-5 inline-fix">
-                                        <input type="text" data-toggle="tooltipInterest" class="calcInput fullWidthInput" placeholder="Interest Rate %" id="hInterest" name="hInterest" />
+                                        <input type="text" class="calcInput fullWidthInput" placeholder="Interest Rate %" id="hInterest" name="hInterest" />
                                     </div>
                                     <div class="col-1 inline-fix"></div>
                                     <div class="col-5 inline-fix checkboxFix">
@@ -270,7 +272,7 @@
         <div class="fullContainer">
             <div class="col-12">
                 <!-- Link buttons for calulators goes here -->
-                <div class="col-1andhalf calcSelector floatLeft">
+                <div class="col-1andhalf calcSelector floatLeft col-tab-3 firstLineTab allSelectorMob col-mob-12">
 					<a class="barLinks" href="calc-page.html">
 						<i class="fa fa-home fa-3x"></i>
 						<p class="selectorTextLine1">Mortgage</p>
@@ -278,7 +280,7 @@
 						<p class="selectorTextLine2">Calculator</p>
 					</a>
 				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
+                <div class="col-1andhalf calcSelector floatLeft col-tab-3 firstLineTab allSelectorMob col-mob-12">
 					<a class="barLinks" href="calc-page.html">
 						<i class="fa fa-car fa-3x"></i>
 						<p class="selectorTextLine1">Car</p>
@@ -286,7 +288,7 @@
 						<p class="selectorTextLine2">Calculator</p>
 					</a>
 				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
+                <div class="col-1andhalf calcSelector floatLeft col-tab-3 firstLineTab allSelectorMob col-mob-12">
 					<a class="barLinks" href="calc-page.html">
 						<i class="fa fa-user fa-3x"></i>
 						<p class="selectorTextLine1">Personal</p>
@@ -294,7 +296,7 @@
 						<p class="selectorTextLine2">Calculator</p>
 					</a>
 				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
+                <div class="col-1andhalf calcSelector floatLeft col-tab-3 firstLineTab allSelectorMob col-mob-12">
 					<a class="barLinks" href="calc-page.html">
 						<i class="fa fa-graduation-cap fa-3x"></i>
 						<p class="selectorTextLine1">School</p>
@@ -302,7 +304,7 @@
 						<p class="selectorTextLine2">Calculator</p>
 					</a>
 				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
+                <div class="col-1andhalf calcSelector floatLeft col-tab-3 col-mob-12 allSelectorMob">
 					<a class="barLinks" href="calc-page.html">
 						<i class="fa fa-briefcase fa-3x"></i>
 						<p class="selectorTextLine1">Business</p>
@@ -310,7 +312,7 @@
 						<p class="selectorTextLine2">Calculator</p>
 					</a>
 				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
+                <div class="col-1andhalf calcSelector floatLeft col-tab-3 col-mob-12 allSelectorMob">
 					<a class="barLinks" href="calc-page.html">
 						<i class="fa fa-desktop fa-3x"></i>
 						<p class="selectorTextLine1">Equipement</p>
@@ -318,7 +320,7 @@
 						<p class="selectorTextLine2">Calculator</p>
 					</a>
 				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
+                <div class="col-1andhalf calcSelector floatLeft col-tab-3 col-mob-12 allSelectorMob">
 					<a class="barLinks" href="calc-page.html">
 						<i class="fa fa-credit-card fa-3x"></i>
 						<p class="selectorTextLine1">Credit Card</p>
@@ -326,7 +328,7 @@
 						<p class="selectorTextLine2">Calculator</p>
 					</a>
 				</div>
-                <div class="col-1andhalf calcSelector floatLeft">
+                <div class="col-1andhalf calcSelector floatLeft col-tab-3 col-mob-12 allSelectorMob">
 					<a class="barLinks" href="calc-page.html">
 						<i class="fa fa-money-bill-alt fa-3x"></i>
 						<p class="selectorTextLine1">Line of Credit</p>
@@ -339,7 +341,7 @@
         <div class="fullContainer clearFloat">
             <div class="bannerFullLanding2">
                 <!-- Banner background image one goes here -->
-                <div class="container aboutTextBox col-6">
+                <div class="container aboutTextBox col-6 col-mob-11">
                     <h2>About <br/> Loan Payment Calculator</h2>
                     <div class="orangeLine"></div>
                     <p>
@@ -348,50 +350,48 @@
                 </div>
             </div>
         </div>
-        <div class="container col-12">
+        <div class="container col-12 col-mob-12">
             <div class="centered">
                 <h3 class="blue">Learn Tips and Tricks on Managing Your Loans</h3>
 				<p class="subHeadText">Our blog provides the best articles for you to learn tips and tricks on managing your loans.</p>
 				<p class="subHeadText">So be sure to always check back!</p><!-- centered text-->
-				<p class="desktop">Desktop</p>
-                <p class="tablet">Tablet</p>
-                <p class="mobile">Mobile</p>
             </div>
-            <div class="col-8 floatLeft"> <!-- spanned inside div -->
+            <div class="col-8 col-tab-12 col-mob-12 floatLeft"> <!-- spanned inside div -->
                 <div class="col-12 articleDiv clearFloat">
-					<div class="col-4 floatLeft">
+					<div class="col-4 col-mob-12 floatLeft">
 						<img class="articleImg" src="img/finances.jpg" alt="">
 					</div>
-                	<div class="col-7 floatLeft articleText">
+                	<div class="col-7 col-mob-11 floatLeft articleText">
                   	  <h3 class="articleHead">How to setup a loan Calendar</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
                     	<a href="article.html"><button class="articleButton"><span>Read more</span></button></a>
                 	</div>
 				</div>
 				<div class="col-12 articleDiv clearFloat">
-					<div class="col-4 floatLeft">
+					<div class="col-4 col-mob-12 floatLeft">
 						<img class="articleImg" src="img/pencil-work.jpg" alt="">
 					</div>
-                	<div class="col-7 floatLeft articleText">
+                	<div class="col-7 col-mob-11 floatLeft articleText">
                     	<h3 class="articleHead">Learn to maximize your loans</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
                     	<a href="article.html"><button class="articleButton"><span>Read more</span></button></a>
                 	</div>
 				</div>
 				<div class="col-12 articleDiv clearFloat">
-					<div class="col-4 floatLeft">
+					<div class="col-4 col-mob-12 floatLeft">
 						<img class="articleImg" src="img/pencil-work.jpg" alt="">
 					</div>
-                	<div class="col-7 floatLeft articleText">
+                	<div class="col-7 col-mob-11 floatLeft articleText">
                     	<h3 class="articleHead">Learn to maximize your loans</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
                     	<a href="article.html"><button class="articleButton"><span>Read more</span></button></a>
                 	</div>
 				</div>
             </div>
-            <div class="ad1 col-4 floatRight"><!-- half page ad goes here--></div>
+            <div class="ad1 col-4 floatRight desktop"><!-- half page ad goes here--></div>
+            <div class="ad1-tab col-tab-12 floatRight tablet"><!-- half page ad goes here--></div>
         </div>
-        <div class="clearFloat">
+        <div class="clearFloat col-mob-12 col-tab-12 col-12">
             <footer class="centered">
                 <p>© 2018 LoanPaymentsCalculator.com<br>Terms and Conditions | Privacy Policy | Accessibility</p>
             </footer>
