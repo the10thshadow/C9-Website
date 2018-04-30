@@ -8,6 +8,9 @@
     font-style: normal;
 
 }
+canvas {
+  background-color: white;
+}
 body {
 	background-color: #E79190;
 	font-family: "Open-Sans", "Gill Sans MT", Helvetica, "Myriad Pro", "DejaVu Sans Condensed", "Gill Sans", Arial, "sans-serif"
@@ -21,7 +24,7 @@ body {
     margin: auto
 }
 .cont-mob {
-	
+
 }
 .cont-top-fix {
 	padding-top: 5px;
@@ -87,7 +90,7 @@ body {
 /*End of testing code pieces*/
 
 nav {
-	
+
 }
 .mainNav {
 	padding-top: 13px;
@@ -167,7 +170,7 @@ nav {
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 .mob-main-nav {
-	
+
 }
 .mob-nav-content {
 	display: none;
@@ -213,10 +216,10 @@ nav {
 	text-align: right;
 }
 .searchIMG {
-	width: 17px;	
+	width: 17px;
 	vertical-align: middle;
 	cursor: pointer;
-	
+
 }
 .searchBox {
 	line-height: 18px;
@@ -244,7 +247,7 @@ nav {
 	vertical-align:top;
 }
 .textArticle {
-	
+
 }
 .centered {
 	margin-left: auto;
@@ -269,7 +272,7 @@ nav {
 }
 
 footer {
-	border-top: 1px black solid; 
+	border-top: 1px black solid;
 	padding: 20px 0;
 }
 footer p {
@@ -315,13 +318,13 @@ footer p {
 	font-weight:400;
 	color:#3d393b;
 	vertical-align: middle;
-	
+
 }
 .calcDropdown {
-	-webkit-appearance: initial; 
+	-webkit-appearance: initial;
 	-moz-appearance: initial;
 	-ms-appearance:initial;
-	-o-appearance: initial; 
+	-o-appearance: initial;
 	border:1px solid #CCCCCC;
 	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
 	border-radius: 0 10px 10px 0;
@@ -345,7 +348,7 @@ footer p {
     position:absolute;
 	cursor: pointer;
     pointer-events:none;
-	
+
 }
 .dropdownStyle:before {
     content:'';
@@ -474,13 +477,13 @@ footer p {
 	font-weight:400;
 	color:#3d393b;
 	vertical-align: middle;
-	
+
 }
 .calcDropdown {
-	-webkit-appearance: initial; 
+	-webkit-appearance: initial;
 	-moz-appearance: initial;
 	-ms-appearance:initial;
-	-o-appearance: initial; 
+	-o-appearance: initial;
 	border:1px solid #CCCCCC;
 	box-shadow: inset 0px 2px 7px rgba(0,0,0,0.2);
 	border-radius: 0 10px 10px 0;
@@ -504,7 +507,7 @@ footer p {
     position:absolute;
 	cursor: pointer;
     pointer-events:none;
-	
+
 }
 .dropdownStyle:before {
     content:'';
@@ -545,7 +548,7 @@ footer p {
 /*Tablets*/
 @media (max-width:1024px)
 {
-	
+
 .reset-container {
     max-width: 800px;
 }
@@ -567,7 +570,7 @@ footer p {
 	font-weight: 900;
 }
 nav {
-	
+
 }
 .mainNav {
 	padding-top: 13px;
@@ -586,7 +589,7 @@ nav {
 	padding: 10px 1px;
 }
 .mainNav ul li:hover {
-	
+
 }
 .mainNav ul li a {
 	display: block;
@@ -595,7 +598,7 @@ nav {
 	text-decoration: none;
 }
 #navToggle {
-	display:none; 
+	display:none;
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.5s ease-in-out;
@@ -608,13 +611,13 @@ nav {
 /*Mobile */
 @media (max-width:640px)
 {
-	
+
 .reset-container {
     min-width: 320px;
     max-width: 500px
 }
 nav {
-	
+
 }
 .mainNav {
 	padding-top: 13px;
@@ -633,7 +636,7 @@ nav {
 	padding: 10px 1px;
 }
 .mainNav ul li:hover {
-	
+
 }
 .mainNav ul li a {
 	display: block;
@@ -702,7 +705,7 @@ nav {
 	font-weight:400;
 	color:#3d393b;
 	vertical-align: middle;
-	
+
 }
 .calcDropdown {
 	border:1px solid #CCCCCC;
@@ -749,7 +752,7 @@ nav {
     position:absolute;
 	cursor: pointer;
     pointer-events:none;
-	
+
 }
 .dropdownStyle:before {
     content:'';
@@ -757,4 +760,7 @@ nav {
     display:block;
 	cursor: pointer;
 }
-
+.textResult {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #377CB5;
+}

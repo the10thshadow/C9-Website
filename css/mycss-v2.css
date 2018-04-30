@@ -176,7 +176,7 @@ input::-moz-placeholder { /* Mozilla Firefox 19+ */
     padding-left: 20px;
     -webkit-transition: opacity .1s;
      transition: opacity .1;
-	
+
 }
 input:focus::-moz-placeholder {
     color: transparent;
@@ -346,7 +346,7 @@ nav {
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 .mob-main-nav {
-	
+
 }
 .mob-nav-content {
 	display: none;
@@ -389,10 +389,10 @@ nav {
 	text-align: right;
 }
 .searchIMG {
-	width: 17px;	
+	width: 17px;
 	vertical-align: middle;
 	cursor: pointer;
-	
+
 }
 .searchBox {
 	line-height: 18px;
@@ -408,7 +408,7 @@ nav {
     background-color: white;
     text-align: right;
     overflow: hidden;
-	
+
 }
 .searchBox > input {
     position: absolute;
@@ -445,7 +445,7 @@ nav {
 	vertical-align:top;
 }
 .textArticle {
-	
+
 }
 .heroText {
     position:relative;
@@ -453,7 +453,7 @@ nav {
 }
 .heroText h2 {
     font-family:"Open Sans", sans-serif;
-    font-size:36px; 
+    font-size:36px;
 
 }
 .orangeText {
@@ -522,7 +522,7 @@ nav {
 }
 
 footer {
-	border-top: 1px black solid; 
+	border-top: 1px black solid;
 	padding: 20px 0;
 }
 footer p {
@@ -636,13 +636,13 @@ input {
 	font-weight:400;
 	color:#3d393b;
 	vertical-align: middle;
-	
+
 }
 .calcDropdown select {
-	-webkit-appearance: none; 
+	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance:none;
-	-o-appearance: none; 
+	-o-appearance: none;
 	appearance:none;
 	width: 100%;
     height: 36px;
@@ -663,14 +663,14 @@ input {
     border-radius: 0 4px 4px 0;
 }
 .calcDropdown select option {
-	-webkit-appearance: none; 
+	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance:none;
-	-o-appearance: none; 
+	-o-appearance: none;
 	appearance:none;
 }
 .calcDropdown {
-	
+
 	border-radius: 0 4px 4px 0;
 	display: inline;
 	min-width: 50px;
@@ -690,7 +690,7 @@ input {
     position:absolute;
 	cursor: pointer;
     pointer-events:none;
-	
+
 }
 .dropdownStyle:before {
     content:'';
@@ -712,9 +712,9 @@ input {
 	-webkit-transition: background-color 0.2s ease-out;
 	-moz-transition: background-color 0.2s ease-out;
 	-ms-transition: background-color 0.2s ease-out;
-	-o-transition: background-color 0.2s ease-out; 
+	-o-transition: background-color 0.2s ease-out;
 	transition: background-color 0.2s ease-out;
-	
+
 }
 .buttonInput:hover {
 	background-color: white;
@@ -740,15 +740,15 @@ input {
 	-webkit-transition: color 0.2s ease-out;
 	-moz-transition: color 0.2s ease-out;
 	-ms-transition: color 0.2s ease-out;
-	-o-transition: color 0.2s ease-out; 
+	-o-transition: color 0.2s ease-out;
 	transition: color 0.2s ease-out;
 }
 .buttonInputReset {
-	background:hsla(207,53%,46%,0.75); 
+	background:hsla(207,53%,46%,0.75);
 }
 .calcButtonSubmit{
 	color: white;
-	
+
 }
 .calcButtonSubmit:hover {
 	color: #ff7041;
@@ -772,7 +772,7 @@ input {
 	-webkit-transition: background-color 0.2s ease-out;
 	-moz-transition: background-color 0.2s ease-out;
 	-ms-transition: background-color 0.2s ease-out;
-	-o-transition: background-color 0.2s ease-out; 
+	-o-transition: background-color 0.2s ease-out;
 	transition: background-color 0.2s ease-out;
 }.calcButtonReset:hover {
 	background-color: white;
@@ -887,7 +887,7 @@ input {
 	color: #6c6c6c;
 	font-family: "Open Sans", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	font-weight: lighter;
-	
+
 }
 .articleDiv {
 	padding: 0 20px 20px 0px;
@@ -987,7 +987,7 @@ input {
 	padding: 10px 0 0px 0;
 }
 .relatedArticles {
-	padding-left: 20px; 
+	padding-left: 20px;
 	list-style-type:circle;
 	margin-bottom: 40px;
 }
@@ -1039,7 +1039,7 @@ input {
 	border: 1px solid #377CB5;
 	border-top: none;
 	border-radius:0 0;
-	padding:5px 0;	
+	padding:5px 0;
 }
 .articleCategory a {
 	text-decoration: none;
@@ -1109,8 +1109,34 @@ input {
 .barLinks {
 	text-decoration: none;
 }
-
-
+.textResult {
+    padding: 10px;
+    border-bottom: 1px solid #377CB5;
+    margin-bottom: 15px;
+}
+.calcForm div p {
+  color: #6c6c6c;
+}
+.gridTitles p {
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  color: #377CB5;
+  border-top: 1px solid #377CB5;
+}
+.gridText p {
+  padding: 0px;
+  margin: 0px;
+  float: left;
+  color: #6c6c6c;
+  border-top: 1px solid #377CB5;
+}
+.gridButton {
+  width: 100%;
+  margin: 30px 0px;
+  position: relative;
+  top:10px;
+}
 
 
 /*Fixing an issue on desktop with alignment and columbs*/

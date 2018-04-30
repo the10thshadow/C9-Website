@@ -108,28 +108,27 @@
 				<div class="ad1"></div>
 			</div>
 		<div class="col-8 floatRight">
-		<div class="col-12 floatRight calcForm">
+		<div class="col-12 floatRight ">
 			<!-- Content goes here -->
-			<canvas id="myChart" width="400" height="400"></canvas>
+			<div class="col-6 floatLeft inline-fix">
+			<canvas id="myChart" height="400"></canvas>
 			<script>
 		    	var myChartJs = document.getElementById("myChart").getContext("2d");
 
 					var statsChart = new Chart(myChartJs, {
-						type:'bar',
+						type:'pie',
 						data: {
-							labels:["Red", "Blue", "Yellow"],
+							labels:["Your Interest", "Your Payment"],
 							datasets: [{
 								label:"# of votes",
-								data:[12,19,3],
+								data:[12000, 50000],
 								backgroundColor: [
-									'rgba(255,99,132,0.2)',
-									'rgba(54,162,235,0.2)',
-									'rgba(255,206,86,0.2)'
+									'#ff7041',
+									'#337CB5'
 								],
 								borderColor: [
-									'rgba(255,99,132,0.2)',
-									'rgba(54,162,235,0.2)',
-									'rgba(255,206,86,0.2)'
+									'#ff7041',
+									'#337CB5'
 								],
 								borderWidth: 1
 							}]
@@ -137,15 +136,146 @@
 						options: {
 							scales: {
 								yAxes: [{
-									ticks: {
-										beginAtZero:true
-									}
+									ticks: {display:false},
+									gridLines: {display:false}
+								}],
+								xAxes: [{
+									ticks: {display:false},
+									gridLines: {display:false}
 								}]
-							}
 						}
+					}
 					})
 
 			</script>
+		</div>
+		<div class="col-5 floatRight inline-fix">
+			<div class="calcForm">
+				<div class="textResult">
+					<h2 class="centered">Pie Chart Results</h2>
+				</div>
+				<div>
+					<p>
+						Lorem nusquam sensibus ei mei, vis te convenire efficiendi definitiones. Eum vidisse mnesarchum ne, at usu animal docendi fabellas, at error erant mei. His errem fabulas percipit ne. Errem primis appellantur ne mei, in utamur inimicus pri. Ne usu scripserit ullamcorper, et solet euismod eruditi usu, an brute elaboraret pro.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+			<canvas id="myChartLine" class="chartjs" height="168"></canvas>
+			<script>
+		    	var myChartJs = document.getElementById("myChartLine").getContext("2d");
+
+					var statsChart = new Chart(myChartJs, {
+						type:'line',
+						data: {
+							labels:["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+							datasets: [{
+								label:["Your Payments"],
+								data:[50000,45000,41000,35000,31000,27000,23000,19000,16000,12000,4500,0],
+								"fill": false,
+								borderColor: [
+									'#337CB5'
+								],
+								backgroundColor:[
+									'#337CB5'
+								],
+								borderWidth: 1,
+							}, {
+								label:["Your Interest"],
+								data:[43000,41000,35000,31000,26000,22000,19000,15000,12000,8000,0,0],
+								type:'line',
+								"fill": false,
+								borderColor: [
+									'#ff7041'
+								],
+								backgroundColor:[
+									'#ff7041'
+								],
+								borderWidth: 1
+							}]
+						},
+						options: {
+							scales: {
+								yAxes: [{
+									ticks: {display:true},
+									gridLines: {display:false}
+								}],
+								xAxes: [{
+									ticks: {display:true},
+									gridLines: {display:false}
+								}]
+						}
+					}
+					})
+
+			</script>
+			<div>
+				<h2 class="centered">Detailed Summary</h2>
+			</div>
+			<div class="gridForm col-12">
+				<div class="gridTitles centered col-12">
+					<p class="col-2 inline-fix">Installments</p>
+					<p class="col-2 centered inline-fix">Prev. Balance</p>
+					<p class="col-2 centered inline-fix">Interest</p>
+					<p class="col-2 centered inline-fix">Payment</p>
+					<p class="col-2 centered inline-fix">New Balance</p>
+					<p class="col-2 centered inline-fix">Cummulative Interest</p>
+				</div>
+				<div class="gridText centered col-12">
+					<p class="col-2 inline-fix">1.</p>
+					<p class="col-2 centered inline-fix">$50000.00</p>
+					<p class="col-2 centered inline-fix">$130.00</p>
+					<p class="col-2 centered inline-fix">$2479.41</p>
+					<p class="col-2 centered inline-fix">$45000.00</p>
+					<p class="col-2 centered inline-fix">$1470.00</p>
+				</div>
+				<div class="gridText centered col-12">
+					<p class="col-2 inline-fix">2.</p>
+					<p class="col-2 centered inline-fix">$50000.00</p>
+					<p class="col-2 centered inline-fix">$130.00</p>
+					<p class="col-2 centered inline-fix">$2479.41</p>
+					<p class="col-2 centered inline-fix">$45000.00</p>
+					<p class="col-2 centered inline-fix">$1470.00</p>
+				</div>
+				<div class="gridText centered col-12">
+					<p class="col-2 inline-fix">3.</p>
+					<p class="col-2 centered inline-fix">$50000.00</p>
+					<p class="col-2 centered inline-fix">$130.00</p>
+					<p class="col-2 centered inline-fix">$2479.41</p>
+					<p class="col-2 centered inline-fix">$45000.00</p>
+					<p class="col-2 centered inline-fix">$1470.00</p>
+				</div>
+				<div class="gridText centered col-12">
+					<p class="col-2 inline-fix">4.</p>
+					<p class="col-2 centered inline-fix">$50000.00</p>
+					<p class="col-2 centered inline-fix">$130.00</p>
+					<p class="col-2 centered inline-fix">$2479.41</p>
+					<p class="col-2 centered inline-fix">$45000.00</p>
+					<p class="col-2 centered inline-fix">$1470.00</p>
+				</div>
+				<div class="gridText centered col-12">
+					<p class="col-2 inline-fix">5.</p>
+					<p class="col-2 centered inline-fix">$50000.00</p>
+					<p class="col-2 centered inline-fix">$130.00</p>
+					<p class="col-2 centered inline-fix">$2479.41</p>
+					<p class="col-2 centered inline-fix">$45000.00</p>
+					<p class="col-2 centered inline-fix">$1470.00</p>
+				</div>
+				<div class="gridText centered col-12">
+					<p class="col-2 inline-fix">6.</p>
+					<p class="col-2 centered inline-fix">$50000.00</p>
+					<p class="col-2 centered inline-fix">$130.00</p>
+					<p class="col-2 centered inline-fix">$2479.41</p>
+					<p class="col-2 centered inline-fix">$45000.00</p>
+					<p class="col-2 centered inline-fix">$1470.00</p>
+				</div>
+			</div>
+			<div class="col-12 centered">
+				<div class="gridButton"><buttom class="buttonInput showMoreBTN" type="button"><span>Show More</span></bottom></div>
+			</div>
 		</div>
 		<div class="paddingTop15">
 			<h2 class="aboutTextHead paddingTop15">What You Need to Know About Mortgages</h2>

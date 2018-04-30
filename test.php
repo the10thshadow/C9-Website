@@ -16,26 +16,65 @@
 </head>
 
 	<body>
-    <canvas id="myChart" width="400" height="400"></canvas>
+    <canvas id="myChart" width="150" height="150"></canvas>
     <script>
         var myChartJs = document.getElementById("myChart").getContext("2d");
 
         var statsChart = new Chart(myChartJs, {
-          type:'bar',
+          type:'pie',
           data: {
-            labels:["Red", "Blue", "Yellow"],
+            labels:["Interest", "Payment"],
             datasets: [{
-              label:"# of votes",
-              data:[12,19,3],
+              data:[3,13],
               backgroundColor: [
-                'rgba(255,99,132,0.2)',
-                'rgba(54,162,235,0.2)',
-                'rgba(255,206,86,0.2)'
+                '#ff7041',
+                '#377CB5'
               ],
               borderColor: [
-                'rgba(255,99,132,0.2)',
-                'rgba(54,162,235,0.2)',
-                'rgba(255,206,86,0.2)'
+								'#ff7041',
+                '#377CB5'
+              ],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero:true
+                }
+              }]
+            }
+          }
+        })
+    </script>
+
+		<canvas id="myChartStats" width="150" height="150"></canvas>
+    <script>
+        var myChartJs = document.getElementById("myChartStats").getContext("2d");
+				var nbrTimeArr = [1,2,3,4,5,6,7,8,9,10];
+				var count = 0;
+
+				var nbrTimeFrame = <?php $nbrTime = 25; echo "{$nbrTime}"; ?>;
+				//while (count < nbrTimeFrame) {
+					//nbrTimeArr.fill (count,count,count);
+					//count = count + 1;
+				//}
+
+
+        var statsChart = new Chart(myChartJs, {
+          type:'line',
+          data: {
+            labels: nbrTimeArr,
+            datasets: [{
+              data: nbrTimeArr,
+              backgroundColor: [
+                '#ff7041',
+                '#377CB5'
+              ],
+              borderColor: [
+								'#ff7041',
+                '#377CB5'
               ],
               borderWidth: 1
             }]
