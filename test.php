@@ -32,12 +32,30 @@
 
 			//Math monthly payment
 			var x = Math.pow(1 + interest, payments);
-			var monthly = (amntTotal*x*interest)/(x-1);
-			//output vars and calculations
-			payment.innerHTML = monthly.toFixed(2);
-			total.innerHTML = (monthly*payments).toFixed(2);
-			totalinterest.innerHTML = ((monthly*payments)-amntTotal).toFixed(2);
-			
+			var monthly = (amnt*x*interest)/(x-1);
+			if (isFinite(monthly)) {
+				//output vars and calculations
+				payment.innerHTML = monthly.toFixed(2);
+				total.innerHTML = (monthly*payments).toFixed(2);
+				totalinterest.innerHTML = ((monthly*payments)-amnt).toFixed(2);
+			} else {
+				payment.innerHTML = "";
+				total.innerHTML = "";
+				totalinterest.innerHTML = "";
+				chart();
+			}
+		}
+		function chart (amntTotal, interest, monthly, payments) {
+			var equity = 0;
+			for (var p = 1; p<= payments; p++) {
+				var thisMonthsInterest = (amntTotal - equity)*interest;
+				equity += (monthly - thisMonthsInterest);
+			}
+			var bal = amntTotal;
+			for(var p = 1; p <= payments; p++) {
+				var thisMonthsInterest = bal*interest;
+				bar -= (monthly - thisMonthsInterest);
+			}
 		}
 	</script>
 </head>
