@@ -94,10 +94,10 @@
 <input class="calcInput" type="number" placeholder="Amount" id="amount" name="amount">
 <input class="calcInput" type="number" placeholder="Annual Interest" id="apr" name="apr">
 <input class="calcInput" type="number" placeholder="Repayment period (Years)" id="years" name="years">
-<input class="calcInput" type="number" placeholder="Zipcode (to find lenders)" id="zipcode" name="zipcode">
-<input class="calcInput" type="number" placeholder="Approximate Payments" id="payment" name="payment">
-<input class="calcInput" type="number" placeholder="Total Payment" id="total" name="total">
-<input class="calcInput" type="number" placeholder="Total Interest to pay" id="totalinterest" name="totalinterest">
+<input class="calcInput" type="number" placeholder="Zipcode (to find lenders)" id="zipcode" name="zipcode"><br><br><br>
+<label class="calcInput" id="payment" name="payment">Approximate Payments</label><br><br><br>
+<label class="calcInput" id="total" name="total">Total Payment</label><br><br><br>
+<label class="calcInput" id="totalinterest" name="totalinterest">Total Interest to pay</label><br>
 <button class="buttonInput" type="submit">Try</button>
 </form>
 
