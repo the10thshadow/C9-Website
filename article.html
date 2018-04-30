@@ -157,15 +157,22 @@
 <div class="fullContainer">
 		<div>
 		<header>
-				<div class="container"> 
+				<div class="container">
 				<!-- Logo goes here -->
 				<div class="col-12">
 						<div class="col-4"> <a href="index.html"><img alt="" class="logo col-1 floatLeft" src="img/svg/logo.svg" />
 							<div class="col-6 floatLeft"> <span class="logo-name">Loan Payment</span> <span class="logo-name-sec">Calculator</span> </div>
 							</a> </div>
+							<div class="floatRight">
+								<div class="mob-nav-icon tablet mobile hamburger" onclick="navToggle(this)">
+									<div class="bar1"></div>
+									<div class="bar2"></div>
+									<div class="bar3"></div>
+								</div>
+							</div>
 						<!-- Lang dropdown -->
 						<div class="floatRight">
-						<div class="dropdown"> <span><img class="imgLang" src="img/UK_Flag.png" alt=""></span>
+						<div class="dropdown desktop"> <span><img class="imgLang" src="img/UK_Flag.png" alt=""></span>
 								<div class="dropdown-content">
 								<div><img class="imgLang" src="img/UK_Flag.png" alt=""></div>
 								<div><img class="imgLang" src="img/Flag_of_France.png" alt=""></div>
@@ -179,9 +186,14 @@
 		<div class="fullContainer navBackground clearFloat">
 		<div>
 				<div class="container col-12">
-				<nav class="mainNav col-12"> 
+				<nav class="mainNav col-12">
 						<!-- Nav goes here -->
-						<ul>
+						<ul id="navToggle">
+							<li class="tablet mobile reset-container col-mob-12">
+								<a class="span-link col-mob-4" href="#EN">EN</a>
+								<a class="span-link col-mob-4" href="#FR">FR</a>
+								<a class="span-link col-mob-4" href="#ES">ES</a>
+							</li>
 						<li><a href="calc-page.html">Mortgage</a></li>
 						<li><a href="calc-page.html">School Loans</a></li>
 						<li><a href="calc-page.html">Bank Rates</a></li>
@@ -196,8 +208,8 @@
 			</div>
 			</div>
 	</div>
-		<!-- End of Header & nav --> 
-		
+		<!-- End of Header & nav -->
+
 		<!-- Content Starts here -->
 		<div class="container col-12">
 		<div class="col-7 floatLeft">
@@ -213,6 +225,9 @@
 						<i class="writtenByText">April 30 2018 | 0 Comments</i> </div>
 					</div>
 			</div>
+			<p class="desktop">Desktop</p>
+			<p class="tablet">Tablet</p>
+			<p class="mobile">Mobile</p>
 				<div class="col-12">
 				<p class="subHeadText">Lorem ipsum dolor sit amet, id per illum ipsum accusamus, qui ignota vidisse cu, eu ullum mentitum singulis pri.</p>
 				<h3 class="articleHead">The Steps</h3>
@@ -268,7 +283,7 @@
 			<div class="ad3 centered"></div>
 		</div>
 	</div>
-			
+
 			<h2>More articles you would be interested in...</h2>
 			<div class="container col-12 paddingTop15">
 				<div class="col-4 floatLeft articleBG">
@@ -307,7 +322,7 @@
 					</div>
 				</div>
 			</div>
-		<!-- Content Ends here --> 
+		<!-- Content Ends here -->
 	</div>
 		<!-- Footer -->
 		<div class="clearFloat">

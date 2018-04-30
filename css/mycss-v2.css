@@ -1374,7 +1374,7 @@ input {
   }
   .subForm {
     position: relative;
-    left: 30px;
+    left: 0px;
   }
 }
 
