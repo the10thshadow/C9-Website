@@ -1376,6 +1376,12 @@ input {
     position: relative;
     left: 0px;
   }
+  .articleTextTabFix {
+    left: 5px !important;
+  }
+  .articleImgTabFix {
+    width: 100%;
+  }
 }
 
 
@@ -1436,7 +1442,7 @@ input {
   .articleDiv {
     padding: 0px;
   }
-  .ad1, .ad2, .ad3 {
+  .ad1, .ad2, .ad3, .ad2Borders, .ad3Borders {
     display: none !important;
   }
 }
