@@ -112,9 +112,6 @@
 				<!-- Banner background image one goes here -->
 				<div class="container bannerTextBG">
 				<h2 class="bannerText">Mortgage Loan Calculator<br>Summary Results</h2>
-				<p class="desktop">Desktop</p>
-				<p class="tablet">Tablet</p>
-				<p class="mobile">Mobile</p>
 			</div>
 			</div>
 	</div>
