@@ -185,7 +185,7 @@
 		 function paymentToX(n) { return n * width/payments; }
 		 function amountToY(a) { return height-(a * height/(monthly*payments*1.05));}
 		 // Payments are a straight line from (0,0) to (payments, monthly*payments)
-		 amountToY(monthly*payments))};
+		 amountToY(monthly*payments);
 
 		 // Cumulative equity is non-linear and trickier to chart
 		 var equity = 0;
