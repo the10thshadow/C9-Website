@@ -98,7 +98,7 @@
 <label class="calcInput" id="payment" name="payment">Approximate Payments</label><br><br><br>
 <label class="calcInput" id="total" name="total">Total Payment</label><br><br><br>
 <label class="calcInput" id="totalinterest" name="totalinterest">Total Interest to pay</label><br>
-<button class="buttonInput" type="submit">Try</button>
+<button class="buttonInput" type="button" onClick="Calculate ()">Try</button>
 </form>
 
 		<canvas id="graph" width="500px" height="300px"></canvas>
