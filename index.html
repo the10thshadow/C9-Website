@@ -168,9 +168,14 @@
 								<span class="logo-name-sec">Calculator</span>
 							</div>
 							</a>
-                        </div>
+            </div>
+            <div class="mob-nav-icon tablet mobile" onclick="navToggle(this)">
+    						<div class="bar1"></div>
+    						<div class="bar2"></div>
+    						<div class="bar3"></div>
+    					</div>
 						<div class="floatRight">
-							<div class="dropdown">
+							<div class="dropdown desktop">
 								<span><img class="imgLang" src="img/UK_Flag.png" alt=""></span>
 								<div class="dropdown-content">
 									<div><img class="imgLang" src="img/UK_Flag.png" alt=""></div>
@@ -182,12 +187,17 @@
                 </div>
             </header>
         </div>
-        <div class="fullContainer navBackground clearFloat">
+        <div class="fullContainer navBackground clearFloat col-mob-12">
             <div>
                 <div class="container col-12">
                     <nav class="mainNav col-12">
                         <!-- Nav goes here -->
-                        <ul>
+                        <ul id="navToggle">
+                            <li class="tablet mobile reset-container col-mob-12">
+                              <a class="span-link col-mob-4" href="#EN">EN</a>
+                  						<a class="span-link col-mob-4" href="#FR">FR</a>
+                  						<a class="span-link col-mob-4" href="#ES">ES</a>
+                            </li>
                             <li><a href="calc-page.html">Mortgage</a></li>
                             <li><a href="calc-page.html">School Loans</a></li>
                             <li><a href="calc-page.html">Bank Rates</a></li>
