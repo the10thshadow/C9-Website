@@ -232,61 +232,61 @@
 				<h2 class="centered">Detailed Summary</h2>
 			</div>
 			<div class="gridForm col-12 col-tab-12 clearFloat">
-				<div class="gridTitles centered col-12">
-					<p class="col-2 inline-fix">Installments</p>
-					<p class="col-2 centered inline-fix">Prev. Balance</p>
-					<p class="col-2 centered inline-fix">Interest</p>
-					<p class="col-2 centered inline-fix">Payment</p>
-					<p class="col-2 centered inline-fix">New Balance</p>
-					<p class="col-2 centered inline-fix">Cummulative Interest</p>
+				<div class="gridTitles centered col-12 col-mob-12">
+					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">Installments</p>
+					<p class="col-2 desktop tablet centered inline-fix">Prev. Balance</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">Interest</p>
+					<p class="col-2 desktop tablet centered inline-fix">Payment</p>
+					<p class="col-2 desktop tablet centered inline-fix">New Balance</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">Cummulative Interest</p>
 				</div>
 				<div class="gridText centered col-12">
-					<p class="col-2 inline-fix">1.</p>
-					<p class="col-2 centered inline-fix">$50000.00</p>
-					<p class="col-2 centered inline-fix">$130.00</p>
-					<p class="col-2 centered inline-fix">$2479.41</p>
-					<p class="col-2 centered inline-fix">$45000.00</p>
-					<p class="col-2 centered inline-fix">$1470.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">1.</p>
+					<p class="col-2 desktop tablet centered inline-fix">$50000.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$130.00</p>
+					<p class="col-2 desktop tablet centered inline-fix">$2479.41</p>
+					<p class="col-2 desktop tablet centered inline-fix">$45000.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$1470.00</p>
 				</div>
 				<div class="gridText centered col-12">
-					<p class="col-2 inline-fix">2.</p>
-					<p class="col-2 centered inline-fix">$50000.00</p>
-					<p class="col-2 centered inline-fix">$130.00</p>
-					<p class="col-2 centered inline-fix">$2479.41</p>
-					<p class="col-2 centered inline-fix">$45000.00</p>
-					<p class="col-2 centered inline-fix">$1470.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">2.</p>
+					<p class="col-2 desktop tablet centered inline-fix">$50000.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$130.00</p>
+					<p class="col-2 desktop tablet centered inline-fix">$2479.41</p>
+					<p class="col-2 desktop tablet centered inline-fix">$45000.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$1470.00</p>
 				</div>
 				<div class="gridText centered col-12">
-					<p class="col-2 inline-fix">3.</p>
-					<p class="col-2 centered inline-fix">$50000.00</p>
-					<p class="col-2 centered inline-fix">$130.00</p>
-					<p class="col-2 centered inline-fix">$2479.41</p>
-					<p class="col-2 centered inline-fix">$45000.00</p>
-					<p class="col-2 centered inline-fix">$1470.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">3.</p>
+					<p class="col-2 desktop tablet centered inline-fix">$50000.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$130.00</p>
+					<p class="col-2 desktop tablet centered inline-fix">$2479.41</p>
+					<p class="col-2 desktop tablet centered inline-fix">$45000.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$1470.00</p>
 				</div>
 				<div class="gridText centered col-12">
-					<p class="col-2 inline-fix">4.</p>
-					<p class="col-2 centered inline-fix">$50000.00</p>
-					<p class="col-2 centered inline-fix">$130.00</p>
-					<p class="col-2 centered inline-fix">$2479.41</p>
-					<p class="col-2 centered inline-fix">$45000.00</p>
-					<p class="col-2 centered inline-fix">$1470.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">4.</p>
+					<p class="col-2 desktop tablet centered inline-fix">$50000.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$130.00</p>
+					<p class="col-2 desktop tablet centered inline-fix">$2479.41</p>
+					<p class="col-2 desktop tablet centered inline-fix">$45000.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$1470.00</p>
 				</div>
 				<div class="gridText centered col-12">
-					<p class="col-2 inline-fix">5.</p>
-					<p class="col-2 centered inline-fix">$50000.00</p>
-					<p class="col-2 centered inline-fix">$130.00</p>
-					<p class="col-2 centered inline-fix">$2479.41</p>
-					<p class="col-2 centered inline-fix">$45000.00</p>
-					<p class="col-2 centered inline-fix">$1470.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">5.</p>
+					<p class="col-2 desktop tablet centered inline-fix">$50000.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$130.00</p>
+					<p class="col-2 desktop tablet centered inline-fix">$2479.41</p>
+					<p class="col-2 desktop tablet centered inline-fix">$45000.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$1470.00</p>
 				</div>
 				<div class="gridText centered col-12">
-					<p class="col-2 inline-fix">6.</p>
-					<p class="col-2 centered inline-fix">$50000.00</p>
-					<p class="col-2 centered inline-fix">$130.00</p>
-					<p class="col-2 centered inline-fix">$2479.41</p>
-					<p class="col-2 centered inline-fix">$45000.00</p>
-					<p class="col-2 centered inline-fix">$1470.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">6.</p>
+					<p class="col-2 desktop tablet centered inline-fix">$50000.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$130.00</p>
+					<p class="col-2 desktop tablet centered inline-fix">$2479.41</p>
+					<p class="col-2 desktop tablet centered inline-fix">$45000.00</p>
+					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$1470.00</p>
 				</div>
 			</div>
 			<div class="col-12 centered">
@@ -302,7 +302,7 @@
 	</div>
 </div>
 <div class="container col-12">
-		<div class="col-3">
+		<div class="col-3 col-mob-12">
 		<form class="floatLeft">
 				<div class="subForm">
 				<div class="formHeadText">
@@ -340,30 +340,30 @@
 	<div class="container col-12 col-tab-12 clearFloat">
 		<div class="col-8 col-tab-12 floatLeft"> <!-- spanned inside div -->
                 <div class="col-12 articleDiv clearFloat">
-					<div class="col-4 col-tab-4 floatLeft paddingTop15">
+					<div class="col-4 col-tab-4 col-mob-12 floatLeft paddingTop15">
 						<img class="articleImg" src="img/finances.jpg" alt="">
 					</div>
-                	<div class="col-7 col-tab-7 floatLeft articleText">
+                	<div class="col-7 col-tab-7 col-mob-12 floatLeft articleText">
                   	  <h3 class="articleHead">How to setup a loan Calendar</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
                     	<button class="articleButton"><span>Read more</span></button>
                 	</div>
 				</div>
 				<div class="col-12 articleDiv clearFloat">
-					<div class="col-4 col-tab-4 floatLeft paddingTop15">
+					<div class="col-4 col-tab-4 col-mob-12 floatLeft paddingTop15">
 						<img class="articleImg" src="img/pencil-work.jpg" alt="">
 					</div>
-                	<div class="col-7 col-tab-7 floatLeft articleText">
+                	<div class="col-7 col-tab-7 col-mob-12 floatLeft articleText">
                     	<h3 class="articleHead">Learn to maximize your loans</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
                     	<button class="articleButton"><span>Read more</span></button>
                 	</div>
 				</div>
 				<div class="col-12 articleDiv clearFloat">
-					<div class="col-4 floatLeft paddingTop15">
+					<div class="col-4 col-mob-12 floatLeft paddingTop15">
 						<img class="articleImg" src="img/pencil-work.jpg" alt="">
 					</div>
-                	<div class="col-7 floatLeft articleText">
+                	<div class="col-7 col-mob-12 floatLeft articleText">
                     	<h3 class="articleHead">Learn to maximize your loans</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
                     	<button class="articleButton"><span>Read more</span></button>
