@@ -133,7 +133,7 @@
 							labels:["Your Interest", "Your Payment"],
 							datasets: [{
 								label:"# of votes",
-								data:[12000, 50000],
+								data:[12000, <?php $amount = $_GET["hAmmount"]; return $amount; ?>],
 								backgroundColor: [
 									'#ff7041',
 									'#337CB5'
