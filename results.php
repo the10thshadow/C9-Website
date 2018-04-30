@@ -293,12 +293,13 @@
 				<div class="gridButton"><buttom class="buttonInput showMoreBTN" type="button"><span>Show More</span></bottom></div>
 			</div>
 		</div>
-		<div class="paddingTop15">
+		<div class="paddingTop15 col-mob-11">
 			<h2 class="aboutTextHead paddingTop15">What You Need to Know About Mortgages</h2>
 			<p class="aboutText">
 				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 			</p>
-			<span><button class="buttonInput calcButtonSubmit readMoreBTN" type="button">Read More...</button></span></div>
+			<span><button class="buttonInput calcButtonSubmit readMoreBTN" type="button">Read More...</button></span>
+		</div>
 	</div>
 </div>
 <div class="container col-12">
@@ -343,7 +344,7 @@
 					<div class="col-4 col-tab-4 col-mob-12 floatLeft paddingTop15">
 						<img class="articleImg" src="img/finances.jpg" alt="">
 					</div>
-                	<div class="col-7 col-tab-7 col-mob-12 floatLeft articleText">
+                	<div class="col-7 col-tab-7 col-mob-11 floatLeft articleText">
                   	  <h3 class="articleHead">How to setup a loan Calendar</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
                     	<button class="articleButton"><span>Read more</span></button>
@@ -353,7 +354,7 @@
 					<div class="col-4 col-tab-4 col-mob-12 floatLeft paddingTop15">
 						<img class="articleImg" src="img/pencil-work.jpg" alt="">
 					</div>
-                	<div class="col-7 col-tab-7 col-mob-12 floatLeft articleText">
+                	<div class="col-7 col-tab-7 col-mob-11 floatLeft articleText">
                     	<h3 class="articleHead">Learn to maximize your loans</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
                     	<button class="articleButton"><span>Read more</span></button>
@@ -363,7 +364,7 @@
 					<div class="col-4 col-mob-12 floatLeft paddingTop15">
 						<img class="articleImg" src="img/pencil-work.jpg" alt="">
 					</div>
-                	<div class="col-7 col-mob-12 floatLeft articleText">
+                	<div class="col-7 col-mob-11 floatLeft articleText">
                     	<h3 class="articleHead">Learn to maximize your loans</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
                     	<button class="articleButton"><span>Read more</span></button>
