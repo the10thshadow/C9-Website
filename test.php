@@ -95,9 +95,12 @@
 <input class="calcInput" type="number" placeholder="Annual Interest" id="apr" name="apr" onChange="Calculate ()">
 <input class="calcInput" type="number" placeholder="Repayment period (Years)" id="years" name="years" onChange="Calculate ()">
 <input class="calcInput" type="number" placeholder="Zipcode (to find lenders)" id="zipcode" name="zipcode"><br><br><br>
-<label class="calcInput" id="payment" name="payment">Approximate Payments</label><br><br><br>
-<label class="calcInput" id="total" name="total">Total Payment</label><br><br><br>
-<label class="calcInput" id="totalinterest" name="totalinterest">Total Interest to pay</label><br>
+<label class="calcInput" id="payment" name="payment">Approximate Payments</label>
+<label class="calcInput">Approximate Payments</label><br><br><br>
+<label class="calcInput" id="total" name="total">Total Payment</label>
+<label class="calcInput">Total Payment</label><br><br><br>
+<label class="calcInput" id="totalinterest" name="totalinterest">Total Interest to pay</label>
+<label class="calcInput">Total Interest to pay</label><br>
 <button class="buttonInput" type="button" onClick="Calculate ()">Try</button>
 </form>
 
