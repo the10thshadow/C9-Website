@@ -590,7 +590,7 @@ input {
 
 .calcInput {
     border: 1px solid #CCCCCC;
-    padding: 7px 10px 7px 0;
+    padding: 7px 10px 7px 10px;
     border-radius: 4px;
 	box-sizing: border-box;
     font-size: 14px;
@@ -1459,5 +1459,36 @@ input {
   .tabLineFix canvas {
     position: relative;
     left: 0px;
+  }
+  .calcLabel {
+  	border:1px solid #377cb5;
+  	border-radius: 4px;
+  	float: left;
+  	box-sizing: border-box;
+  	margin: 15px;
+  	background-color: white;
+  	padding:8px 10px 7px 16px;
+  	font-size:14px;
+  	font-weight:400;
+  	display: inline;
+  	color:#377CB5;
+  	vertical-align: middle;
+  }
+  .calcInput {
+      border: 1px solid #377CB5;
+      padding: 7px 10px 7px 0;
+      border-radius: 4px;
+  	  box-sizing: border-box;
+      font-size: 14px;
+      font-weight: 400;
+  	  display: inline;
+      color: #3d393b;
+      margin:15px 15px 0;
+      vertical-align: middle
+
+  }
+  .calcDropdown select {
+  	color:#377CB5;
+    background: white;
   }
 }
