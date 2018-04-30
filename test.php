@@ -37,7 +37,7 @@
 				//output vars and calculations
 				payment.innerHTML = monthly.toFixed(2);
 				total.innerHTML = (monthly*payments).toFixed(2);
-				totalinterest.innerHTML = ((monthly*payments)-amnt).toFixed(2);
+				totalinterest.innerHTML = ((monthly*payments)-amntTotal).toFixed(2);
 			} else {
 				payment.innerHTML = "";
 				total.innerHTML = "";
