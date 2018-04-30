@@ -32,11 +32,11 @@
 
 			//Math monthly payment
 			var x = Math.pow(1 + interest, payments);
-			var monthly = (amnt*x*interest)/(x-1);
+			var monthly = (amntTotal*x*interest)/(x-1);
 			//output vars and calculations
 			payment.innerHTML = monthly.toFixed(2);
 			total.innerHTML = (monthly*payments).toFixed(2);
-			totalinterest.innerHTML = ((monthly*payments)-amnt).toFixed(2);
+			totalinterest.innerHTML = ((monthly*payments)-amntTotal).toFixed(2);
 			
 		}
 	</script>
