@@ -198,13 +198,13 @@
 		 for(var p = 1; p <= payments; p++) {
 		 var thisMonthsInterest = bal*interest;
 		 bal -= (monthly - thisMonthsInterest); // The rest goes to equity
-		 }
+		 };
 		 var y = amountToY(0); // Y coordinate of X axis
 		 for(var year=1; year*12 <= payments; year++) { // For each year
-		 var x = paymentToX(year*12); // Compute tick position
-		 if (year == 1) g.fillText("Year", x, y-5); // Label the axis
-		 if (year % 5 == 0 && year*12 !== payments) // Number every 5 years
-		 }
+		 	var x = paymentToX(year*12); // Compute tick position
+		 	if (year == 1) g.fillText("Year", x, y-5); // Label the axis
+		 	if (year % 5 == 0 && year*12 !== payments) // Number every 5 years
+		 };
 		 // Mark payment amounts along the right edge
 		 var ticks = [monthly*payments, amnt]; // The two points we'll mark
 		 var rightEdge = paymentToX(payments); // X coordinate of Y axis
