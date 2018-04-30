@@ -212,6 +212,7 @@
 		 var y = amountToY(ticks[i]); // Compute Y position of tick
 		 }
 		}
+	}
 
 
 		</script>
