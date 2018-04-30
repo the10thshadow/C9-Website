@@ -1318,6 +1318,9 @@ input {
     position: relative;
     left: -30px;
   }
+  .blogSubForm {
+    margin:0 auto;
+  }
 }
 
 /*Fixing an issue on tablet with alignment and columbs*/
