@@ -705,7 +705,7 @@ input {
     padding: 7px 15px;
     font-size: 14px;
     font-weight: 400;
-	background-color: #ff7041;
+  	background-color: #ff7041;
     margin:15px;
     color: white;
     vertical-align: middle;
@@ -715,6 +715,9 @@ input {
 	-o-transition: background-color 0.2s ease-out;
 	transition: background-color 0.2s ease-out;
 
+}
+.noLink {
+  text-decoration: none;
 }
 .buttonInput:hover {
 	background-color: white;
