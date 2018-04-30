@@ -126,7 +126,7 @@
 			<canvas id="myChart" height="400"></canvas>
 			<script>
 		    	var myChartJs = document.getElementById("myChart").getContext("2d");
-					var amount = <?php $amount = $_GET["hAmmount"]; echo "{$amount}";?>;
+					var amount = <?php $amount = $_GET["hAmmount"]; echo "$amount";?>;
 
 
 					var statsChart = new Chart(myChartJs, {
