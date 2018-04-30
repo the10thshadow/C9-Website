@@ -126,6 +126,8 @@
 			<canvas id="myChart" height="400"></canvas>
 			<script>
 		    	var myChartJs = document.getElementById("myChart").getContext("2d");
+					var amount = <?php $amount = $_GET["hAmmount"];?>;
+
 
 					var statsChart = new Chart(myChartJs, {
 						type:'pie',
@@ -133,7 +135,7 @@
 							labels:["Your Interest", "Your Payment"],
 							datasets: [{
 								label:"# of votes",
-								data:[12000, <?php $amount = $_GET["hAmmount"]; return $amount; ?>],
+								data:[12000, amount],
 								backgroundColor: [
 									'#ff7041',
 									'#337CB5'
