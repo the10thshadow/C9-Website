@@ -90,7 +90,7 @@
           }
         })
     </script>
-		<form onsubmit="Calculate ()">
+		<form>
 <input class="calcInput" type="number" placeholder="Amount" id="amount" name="amount" onChange="Calculate ()">
 <input class="calcInput" type="number" placeholder="Annual Interest" id="apr" name="apr" onChange="Calculate ()">
 <input class="calcInput" type="number" placeholder="Repayment period (Years)" id="years" name="years" onChange="Calculate ()">
