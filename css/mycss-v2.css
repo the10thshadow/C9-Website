@@ -1321,6 +1321,17 @@ input {
   .blogSubForm {
     margin:0 auto;
   }
+  .tabPieFix {
+    float: right !important;
+  }
+  .tabLineFix {
+    float: right;
+    clear: both;
+  }
+  .tabLineFix canvas {
+    position: relative;
+    left: 50px;
+  }
 }
 
 /*Fixing an issue on tablet with alignment and columbs*/
@@ -1444,5 +1455,9 @@ input {
   }
   .ad1, .ad2, .ad3, .ad2Borders, .ad3Borders {
     display: none !important;
+  }
+  .tabLineFix canvas {
+    position: relative;
+    left: 0px;
   }
 }

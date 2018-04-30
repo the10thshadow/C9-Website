@@ -63,8 +63,15 @@
 						<div class="col-4"> <a href="index.html"><img alt="" class="logo col-1 floatLeft" src="img/svg/logo.svg" />
 						<div class="col-6 floatLeft"> <span class="logo-name">Loan Payment</span> <span class="logo-name-sec">Calculator</span> </div></a>
 					</div>
+					<div class="floatRight">
+						<div class="mob-nav-icon tablet mobile hamburger" onclick="navToggle(this)">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</div>
 						<div class="col-1 floatRight">
-						<div class="dropdown"> <span><img class="imgLang" src="img/UK_Flag.png" alt=""></span>
+						<div class="dropdown desktop"> <span><img class="imgLang" src="img/UK_Flag.png" alt=""></span>
 								<div class="dropdown-content">
 								<div><img class="imgLang" src="img/UK_Flag.png" alt=""></div>
 								<div><img class="imgLang" src="img/Flag_of_France.png" alt=""></div>
@@ -80,7 +87,12 @@
 				<div class="container">
 				<nav class="mainNav">
 						<!-- Nav goes here -->
-						<ul>
+						<ul id="navToggle">
+							<li class="tablet mobile reset-container col-mob-12">
+								<a class="span-link col-mob-4" href="#EN">EN</a>
+								<a class="span-link col-mob-4" href="#FR">FR</a>
+								<a class="span-link col-mob-4" href="#ES">ES</a>
+							</li>
 						<li><a href="calc-page.html">Mortgage</a></li>
 						<li><a href="calc-page.html">School Loans</a></li>
 						<li><a href="calc-page.html">Bank Rates</a></li>
@@ -100,17 +112,20 @@
 				<!-- Banner background image one goes here -->
 				<div class="container bannerTextBG">
 				<h2 class="bannerText">Mortgage Loan Calculator<br>Summary Results</h2>
+				<p class="desktop">Desktop</p>
+				<p class="tablet">Tablet</p>
+				<p class="mobile">Mobile</p>
 			</div>
 			</div>
 	</div>
 		<div class="container col-12">
-		<div class="col-3 floatLeft">
+		<div class="col-3 desktop tablet floatLeft">
 				<div class="ad1"></div>
 			</div>
-		<div class="col-8 floatRight">
+		<div class="col-8 col-mob-12 floatRight">
 		<div class="col-12 floatRight ">
 			<!-- Content goes here -->
-			<div class="col-6 floatLeft inline-fix">
+			<div class="col-6 col-tab-8 col-mob-12 clearFloat floatLeft inline-fix tabPieFix">
 			<canvas id="myChart" height="400"></canvas>
 			<script>
 		    	var myChartJs = document.getElementById("myChart").getContext("2d");
@@ -149,7 +164,7 @@
 
 			</script>
 		</div>
-		<div class="col-5 floatRight inline-fix">
+		<div class="col-5 col-tab-8 col-mob-12 floatRight inline-fix">
 			<div class="calcForm">
 				<div class="textResult">
 					<h2 class="centered">Pie Chart Results</h2>
@@ -163,7 +178,7 @@
 		</div>
 
 
-
+			<div class="col-tab-12 col-mob-12 tabLineFix">
 			<canvas id="myChartLine" class="chartjs" height="168"></canvas>
 			<script>
 		    	var myChartJs = document.getElementById("myChartLine").getContext("2d");
@@ -212,10 +227,11 @@
 					})
 
 			</script>
-			<div>
+		</div>
+			<div class="centered clearFloat">
 				<h2 class="centered">Detailed Summary</h2>
 			</div>
-			<div class="gridForm col-12">
+			<div class="gridForm col-12 col-tab-12 clearFloat">
 				<div class="gridTitles centered col-12">
 					<p class="col-2 inline-fix">Installments</p>
 					<p class="col-2 centered inline-fix">Prev. Balance</p>
@@ -314,30 +330,30 @@
 			<div class="ad3 centered"></div>
 		</div>
 	</div>
-	<div class="container col-12 clearFloat">
+	<div class="container col-12 col-tab-12 clearFloat">
 		<div class="centered">
 			<h2 class="aboutTextHead">Learn Tips and Tricks on Managing Your Loans</h2>
 			<p class="subHeadText">	Our Blog provides the best articles for you to learn tips and tricks on managing your loans.</p>
 			<p class="subHeadText">So be sure to always check back!</p>
 		</div>
 	</div>
-	<div class="container col-12 clearFloat">
-		<div class="col-8 floatLeft"> <!-- spanned inside div -->
+	<div class="container col-12 col-tab-12 clearFloat">
+		<div class="col-8 col-tab-12 floatLeft"> <!-- spanned inside div -->
                 <div class="col-12 articleDiv clearFloat">
-					<div class="col-4 floatLeft paddingTop15">
+					<div class="col-4 col-tab-4 floatLeft paddingTop15">
 						<img class="articleImg" src="img/finances.jpg" alt="">
 					</div>
-                	<div class="col-7 floatLeft articleText">
+                	<div class="col-7 col-tab-7 floatLeft articleText">
                   	  <h3 class="articleHead">How to setup a loan Calendar</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
                     	<button class="articleButton"><span>Read more</span></button>
                 	</div>
 				</div>
 				<div class="col-12 articleDiv clearFloat">
-					<div class="col-4 floatLeft paddingTop15">
+					<div class="col-4 col-tab-4 floatLeft paddingTop15">
 						<img class="articleImg" src="img/pencil-work.jpg" alt="">
 					</div>
-                	<div class="col-7 floatLeft articleText">
+                	<div class="col-7 col-tab-7 floatLeft articleText">
                     	<h3 class="articleHead">Learn to maximize your loans</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
                     	<button class="articleButton"><span>Read more</span></button>
@@ -354,7 +370,7 @@
                 	</div>
 				</div>
             </div>
-		<div class="ad1 col-4 floatRight"><!-- half page ad goes here--></div>
+		<div class="ad1 col-4 desktop floatRight"><!-- half page ad goes here--></div>
 	</div>
 <div class="clearFloat">
 		<footer class="centered">
