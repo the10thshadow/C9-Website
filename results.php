@@ -217,10 +217,10 @@
 								type:'line',
 								"fill": false,
 								borderColor: [
-									'#ff7041'
+									'green'
 								],
 								backgroundColor:[
-									'#ff7041'
+									'green'
 								],
 								borderWidth: 1
 							}]
