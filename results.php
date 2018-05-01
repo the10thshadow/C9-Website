@@ -201,6 +201,18 @@
 								borderWidth: 1,
 							}, {
 								label:["Your Interest"],
+								data:[1200, 2500, 8000, 12000, 15000, 19500, 22000, 26000, 31000, 36000,48000],
+								type:'line',
+								"fill": false,
+								borderColor: [
+									'#ff7041'
+								],
+								backgroundColor:[
+									'#ff7041'
+								],
+								borderWidth: 1
+							}, {
+								label:["Your Total"],
 								data:[43000,41000,35000,31000,26000,22000,19000,15000,12000,8000,0,0],
 								type:'line',
 								"fill": false,
