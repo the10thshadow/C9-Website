@@ -153,7 +153,7 @@
 		function ShowMore() {
 			var x = document.getElementById("moreArticles");
     		if (x.style.display === "none") {
-        		x.style.display = "inline-block";
+        		x.style.display = "block";
     		} else {
         		x.style.display = "none";
     		}
@@ -280,7 +280,7 @@
                     	<a href="article.html"><button class="articleButton"><span>Read more</span></button></a>
                 	</div>
 				</div>
-					<div id="moreArticles">
+					<div id="moreArticles" style="display: none !important;">
 						<div class="col-12 articleDiv clearFloat">
 							<div class="col-4 col-mob-12 col-tab-4 floatLeft paddingTop15">
 								<img class="articleImg" src="img/pencil-work.jpg" alt="">
