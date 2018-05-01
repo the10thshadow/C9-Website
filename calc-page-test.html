@@ -11,7 +11,6 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 	<script>
 		function CheckMobileNav () {
@@ -50,8 +49,119 @@
 				document.getElementById("navToggle").style.transition = "opacity 1s ease 0";
 			}
 		}
+
+		function CalcFormIntercept () {
+			var retValue = true;
+
+			var jAmmount = document.getElementById("hAmmount").value;
+			var jTerm = document.getElementById("hTerm").value;
+			var jInterest = document.getElementById("hInterest").value;
+			var jDownPay = document.getElementById("hDownPay").value;
+			var jTermChoice;
+
+			var termMax = 40;
+			var interestMax = 100;
+
+
+			document.getElementById("hAmmount").style.borderColor = "#CCCCCC";
+			document.getElementById("hTerm").style.borderColor = "#CCCCCC";
+			document.getElementById("hInterest").style.borderColor = "#CCCCCC";
+			document.getElementById("hDownPay").style.borderColor = "#CCCCCC";
+
+			jAmmount = Number(jAmmount);
+			jTerm = Number(jTerm);
+			jInterest = Number(jInterest);
+			jDownPay = Number(jDownPay);
+			jTermChoice = 0;
+
+
+			if (document.getElementById("hYear").selected || document.getElementById("hMonth").selected) {
+				if (document.getElementById("hYear").selected) {
+					jTermChoice = "Y";
+				}
+				if (document.getElementById("hMonth").selected) {
+					jTermChoice = "M";
+				}
+			}
+
+			if (jTermChoice == "Y") {
+				if (jTerm > termMax) {
+					retValue = false;
+					alert("The term period you have entered cannot exceed 40 years.");
+					document.getElementById("hTerm").style.borderColor = "red";
+				}
+			}
+			if (jTermChoice == "M") {
+				if (jTerm > (termMax*12)) {
+					retValue = false;
+					alert("The term period you have entered cannot exceed 480 months (40 years).");
+					document.getElementById("hTerm").style.borderColor = "red";
+				}
+			}
+
+			if (jInterest > interestMax) {
+				retValue = false;
+				alert ("You cannot enter an interest rate higher than 100%.")
+				document.getElementById("hInterest").style.borderColor = "red";
+			}
+			if (jInterest < 0) {
+				retValue = false;
+				alert("You cannot enter an interest rate that is lower than 0%.");
+				document.getElementById("hInterest").style.borderColor = "red";
+			}
+
+
+			if (jAmmount == "" && jTerm == "" && jInterest == "") {
+				retValue = false;
+				alert("no input was inputted!");
+				document.getElementById("hAmmount").style.borderColor = "red";
+				document.getElementById("hTerm").style.borderColor = "red";
+				document.getElementById("hInterest").style.borderColor = "red";
+				} else {
+					if (jAmmount == "") {
+						retValue = false;
+						alert("You did not input a Loan Ammount.");
+						document.getElementById("hAmmount").style.borderColor = "red";
+					}
+					if (jTerm == "") {
+						retValue = false;
+						alert("You did not enter a Term number.");
+						document.getElementById("hTerm").style.borderColor = "red";
+					}
+					if (jInterest == "") {
+						retValue = false;
+						alert("You did not enter a valid Interest rate.");
+						document.getElementById("hInterest").style.borderColor = "red";
+					}
+				}
+
+			if (retValue == true) {
+				//	Formula:
+				//	Monthly Payment =
+				//	Loan amount * ((1 + Interest rate per annum/100)
+				//	^ Term of loan) / Term of loan / 12
+				//	Monthly Payment = Loan amount * ((1 + Interest rate per annum/100) ^ Term of loan) / Term of loan / 12
+				//	monthly = jAmmount * ((1 + jInterest/100) ^ jTerm)/ jTerm / 12
+			}
+
+				return retValue;
+			}
 	</script>
-</head>
+
+
+
+
+<!--Formula:
+Monthly Payment =
+Loan amount * ((1 + Interest rate per annum/100)
+^ Term of loan) / Term of loan / 12 -->
+
+
+
+
+
+
+	</head>
 
 	<body onLoad="CheckMobileNav ()">
 <div class="fullContainer">
@@ -111,200 +221,98 @@
 		<div class="fullContainerCalcMortgage">
 				<!-- Banner background image one goes here -->
 				<div class="container bannerTextBG">
-				<h2 class="bannerText">Mortgage Loan Calculator<br>Summary Results</h2>
+				<h2 class="bannerText">Mortgage Loan Calculator</h2>
 			</div>
 			</div>
 	</div>
-		<div class="container col-12">
-		<div class="col-3 desktop tablet floatLeft">
-				<div class="ad1"></div>
+		<div class="container col-12 col-tab-12">
+		<div class="col-3 col-tab-4 col-tab-mini-fix desktop tablet floatLeft">
+				<div class="ad1 floatLeft"></div>
 			</div>
-		<div class="col-8 col-mob-12 floatRight">
-		<div class="col-12 floatRight ">
-			<!-- Content goes here -->
-			<div class="col-6 col-tab-8 col-mob-12 clearFloat floatLeft inline-fix tabPieFix">
-			<canvas id="myChart" height="400"></canvas>
-			<script>
-		    	var myChartJs = document.getElementById("myChart").getContext("2d");
-					var amount = <?php $amount = $_GET["hAmmount"]; echo $amount;?>;
-					var interest = 12000;
-
-					var statsChart = new Chart(myChartJs, {
-						type:'pie',
-						data: {
-							labels:["Your Interest", "Your Payment"],
-							datasets: [{
-								label:"# of votes",
-								data:[interest, amount],
-								backgroundColor: [
-									'#ff7041',
-									'#337CB5'
-								],
-								borderColor: [
-									'#ff7041',
-									'#337CB5'
-								],
-								borderWidth: 1
-							}]
-						},
-						options: {
-							scales: {
-								yAxes: [{
-									ticks: {display:false},
-									gridLines: {display:false}
-								}],
-								xAxes: [{
-									ticks: {display:false},
-									gridLines: {display:false}
-								}]
-						}
-					}
-					})
-
-			</script>
-		</div>
-		<div class="col-5 col-tab-8 col-mob-12 floatRight inline-fix">
-			<div class="calcForm">
-				<div class="textResult">
-					<h2 class="centered">Pie Chart Results</h2>
-				</div>
+		<div class="col-8 col-tab-7 col-tab-mini-fix col-mob-12 floatRight">
+		<div class="col-12 col-tab-12 col-mob-12 floatRight calcForm">
+		<form class="calcContainer col-tab-12 col-mob-12" onsubmit="CalcFormIntercept ()">
 				<div>
-					<p>
-						Lorem nusquam sensibus ei mei, vis te convenire efficiendi definitiones. Eum vidisse mnesarchum ne, at usu animal docendi fabellas, at error erant mei. His errem fabulas percipit ne. Errem primis appellantur ne mei, in utamur inimicus pri. Ne usu scripserit ullamcorper, et solet euismod eruditi usu, an brute elaboraret pro.
-					</p>
-				</div>
+				<div class="col-12 col-tab-12 floatLeft calcDiv">
+						<div class="col-3 col-tab-4 col-mob-10 floatLeft">
+						<label class="calcLabel col-12">Loan Amount</label>
+					</div>
+						<div class="col-7 col-tab-6 col-mob-10 floatLeft">
+						<input class="calcInput col-12 inputFix" type="number" id="hAmmount" name="hAmmount" placeholder="0.00$">
+					</div>
+					</div>
+				<div class="col-12 col-tab-12 col-mob-12 floatLeft calcDiv">
+						<div class="col-3 col-tab-4 col-mob-10 floatLeft">
+						<label class="calcLabel col-12">Term</label>
+					</div>
+						<div class="col-5 col-tab-4 col-mob-7 floatLeft">
+						<input class="calcInput col-12 inputFix" type="number" id="hTerm" name="hTerm" placeholder="25">
+					</div>
+						<div class="col-2 col-tab-2 col-mob-3 floatLeft">
+						<div class="calcDropdown">
+						<select class="col-12" id="radiusDropdown">
+						<div>
+						<option id="hYear" value="Y">Years</option>
+						</div>
+						<div>
+						<option id="hMonth" value="Months">Months</option>
+						</div>
+					</select>
+					</div>
 			</div>
-		</div>
-
-
-			<div class="col-tab-12 col-mob-12 tabLineFix">
-			<canvas id="myChartLine" class="chartjs" height="168"></canvas>
-			<script>
-		    	var myChartJs = document.getElementById("myChartLine").getContext("2d");
-					var amount = <?php $amount = $_GET["hAmmount"]; echo $amount;?>;
-					var interest = 12000;
-
-					var statsChart = new Chart(myChartJs, {
-						type:'line',
-						data: {
-							labels:["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-							datasets: [{
-								label:["Your Payments"],
-								data:[amount,45000,41000,35000,31000,27000,23000,19000,16000,12000,4500,0],
-								"fill": false,
-								borderColor: [
-									'#337CB5'
-								],
-								backgroundColor:[
-									'#337CB5'
-								],
-								borderWidth: 1,
-							}, {
-								label:["Your Interest"],
-								data:[43000,41000,35000,31000,26000,22000,19000,15000,12000,8000,0,0],
-								type:'line',
-								"fill": false,
-								borderColor: [
-									'#ff7041'
-								],
-								backgroundColor:[
-									'#ff7041'
-								],
-								borderWidth: 1
-							}]
-						},
-						options: {
-							scales: {
-								yAxes: [{
-									ticks: {display:true},
-									gridLines: {display:false}
-								}],
-								xAxes: [{
-									ticks: {display:true},
-									gridLines: {display:false}
-								}]
-						}
-					}
-					})
-
-			</script>
-		</div>
-			<div class="centered clearFloat">
-				<h2 class="centered">Detailed Summary</h2>
+				</div>
+				<div class="col-12 col-tab-12 floatLeft calcDiv">
+				<div class="col-3 col-tab-4 col-mob-10 floatLeft">
+						<label class="calcLabel col-12">Interest</label>
+					</div>
+				<div class="col-7 col-tab-6 col-mob-10 floatLeft">
+						<input class="calcInput col-12 inputFix" type="number" id="hInterest" name="hInterest" placeholder="3.5%">
+					</div>
 			</div>
-			<div class="gridForm col-12 col-tab-12 clearFloat">
-				<div class="gridTitles centered col-12 col-mob-12">
-					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">Installments</p>
-					<p class="col-2 desktop tablet centered inline-fix">Prev. Balance</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">Interest</p>
-					<p class="col-2 desktop tablet centered inline-fix">Payment</p>
-					<p class="col-2 desktop tablet centered inline-fix">New Balance</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">Cummulative Interest</p>
-				</div>
-				<div class="gridText centered col-12">
-					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">1.</p>
-					<p class="col-2 desktop tablet centered inline-fix">$50000.00</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$130.00</p>
-					<p class="col-2 desktop tablet centered inline-fix">$2479.41</p>
-					<p class="col-2 desktop tablet centered inline-fix">$45000.00</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$1470.00</p>
-				</div>
-				<div class="gridText centered col-12">
-					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">2.</p>
-					<p class="col-2 desktop tablet centered inline-fix">$50000.00</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$130.00</p>
-					<p class="col-2 desktop tablet centered inline-fix">$2479.41</p>
-					<p class="col-2 desktop tablet centered inline-fix">$45000.00</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$1470.00</p>
-				</div>
-				<div class="gridText centered col-12">
-					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">3.</p>
-					<p class="col-2 desktop tablet centered inline-fix">$50000.00</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$130.00</p>
-					<p class="col-2 desktop tablet centered inline-fix">$2479.41</p>
-					<p class="col-2 desktop tablet centered inline-fix">$45000.00</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$1470.00</p>
-				</div>
-				<div class="gridText centered col-12">
-					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">4.</p>
-					<p class="col-2 desktop tablet centered inline-fix">$50000.00</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$130.00</p>
-					<p class="col-2 desktop tablet centered inline-fix">$2479.41</p>
-					<p class="col-2 desktop tablet centered inline-fix">$45000.00</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$1470.00</p>
-				</div>
-				<div class="gridText centered col-12">
-					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">5.</p>
-					<p class="col-2 desktop tablet centered inline-fix">$50000.00</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$130.00</p>
-					<p class="col-2 desktop tablet centered inline-fix">$2479.41</p>
-					<p class="col-2 desktop tablet centered inline-fix">$45000.00</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$1470.00</p>
-				</div>
-				<div class="gridText centered col-12">
-					<p class="col-2 col-mob-4 desktop tablet mobile inline-fix">6.</p>
-					<p class="col-2 desktop tablet centered inline-fix">$50000.00</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$130.00</p>
-					<p class="col-2 desktop tablet centered inline-fix">$2479.41</p>
-					<p class="col-2 desktop tablet centered inline-fix">$45000.00</p>
-					<p class="col-2 col-mob-4 desktop tablet mobile centered inline-fix">$1470.00</p>
-				</div>
+				<div class="col-12 col-tab-12 floatLeft calcDiv">
+				<div class="col-3 col-tab-4 col-mob-10 floatLeft">
+						<label class="calcLabel col-12">Down Payment</label>
+					</div>
+				<div class="col-7 col-tab-6 col-mob-10 floatLeft">
+						<input class="calcInput col-12 inputFix" type="number" id="hDownPay" name="hDownPay" placeholder="1000.00$">
+					</div>
 			</div>
-			<div class="col-12 centered">
-				<div class="gridButton"><buttom class="buttonInput showMoreBTN" type="button"><span>Show More</span></bottom></div>
+				<div class="col-12 col-tab-12 floatLeft calcDiv">
+				<div class="col-5 col-tab-10 col-mob-10 inline-fix">
+						<input type="text" class="calcInput col-12 calcSubInput" id="hName" name="hName" placeholder="Name">
+					</div>
+				<div class="col-5 col-tab-10 inline-fix">
+						<input type="email" class="calcInput col-12 calcSubInput" id="hEmail" name="hEmail" placeholder="Email">
+					</div>
 			</div>
-		</div>
-		<div class="paddingTop15 col-mob-11">
+				<div class="col-12 col-tab-12 floatLeft calcDiv">
+				<div class="col-10 calcSub">
+						<input type="checkbox" id="hSubscribe" name="hSubscribe" checked>
+						<label class="blueText">Send results to my email and receive other special related offers and promotions.</label>
+					</div>
+			</div>
+				<div class="col-12 col-tab-12 col-mob-12 floatLeft calcDiv">
+				<div class="col-5 floatLeft">
+						<button type="submit" class="buttonInput calcButtonSubmit col-12" id="hSubmit" name="hSubmit">Compute</button>
+					</div>
+				<div class="col-5 floatLeft">
+						<button type="reset" class="calcButtonReset col-12" id="hReset" name="hReset">Reset</button>
+					</div>
+			</div>
+				</div>
+			</form>
+	</div>
+		<div class="paddingTop15 desktop tablet col-tab-10 tab-mini-col-12 col-mob-12 mobile">
 			<h2 class="aboutTextHead paddingTop15">What You Need to Know About Mortgages</h2>
 			<p class="aboutText">
 				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 			</p>
-			<span><button class="buttonInput calcButtonSubmit readMoreBTN" type="button">Read More...</button></span>
+			<span><a class="noLink" href="article.html"><button class="buttonInput readMoreBTN" type="button"><span>Read More...</span></button></a></span>
 		</div>
 	</div>
 </div>
 <div class="container col-12">
-		<div class="col-3 col-mob-12">
+		<div class="col-3 tab-mini-col-12 col-mob-12">
 		<form class="floatLeft">
 				<div class="subForm">
 				<div class="formHeadText">
@@ -328,53 +336,57 @@
 	</div>
 	</div>
 	<div class="container col-12 clearFloat">
-		<div class="ad3Borders col-9 centered">
+		<div class="ad3Borders col-9 col-tab-12 centered desktop">
 			<div class="ad3 centered"></div>
 		</div>
+		<div class="col-tab-12 tablet">
+			<div class="ad1-tab centered"></div>
+		</div>
 	</div>
-	<div class="container col-12 col-tab-12 clearFloat">
+	<div class="container col-12 clearFloat">
 		<div class="centered">
 			<h2 class="aboutTextHead">Learn Tips and Tricks on Managing Your Loans</h2>
 			<p class="subHeadText">	Our Blog provides the best articles for you to learn tips and tricks on managing your loans.</p>
 			<p class="subHeadText">So be sure to always check back!</p>
 		</div>
 	</div>
-	<div class="container col-12 col-tab-12 clearFloat">
+	<div class="container col-12 clearFloat">
 		<div class="col-8 col-tab-12 floatLeft"> <!-- spanned inside div -->
                 <div class="col-12 articleDiv clearFloat">
-					<div class="col-4 col-tab-4 col-mob-12 floatLeft paddingTop15">
+					<div class="col-4 col-mob-12 floatLeft paddingTop15">
 						<img class="articleImg" src="img/finances.jpg" alt="">
 					</div>
-                	<div class="col-7 col-tab-7 col-mob-11 floatLeft articleText">
+                	<div class="col-7 col-mob-12 floatLeft articleText">
                   	  <h3 class="articleHead">How to setup a loan Calendar</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
-                    	<button class="articleButton"><span>Read more</span></button>
-                	</div>
-				</div>
-				<div class="col-12 articleDiv clearFloat">
-					<div class="col-4 col-tab-4 col-mob-12 floatLeft paddingTop15">
-						<img class="articleImg" src="img/pencil-work.jpg" alt="">
-					</div>
-                	<div class="col-7 col-tab-7 col-mob-11 floatLeft articleText">
-                    	<h3 class="articleHead">Learn to maximize your loans</h3>
-                    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
-                    	<button class="articleButton"><span>Read more</span></button>
+                    	<a href="article.html"><button class="articleButton"><span>Read more</span></button></a>
                 	</div>
 				</div>
 				<div class="col-12 articleDiv clearFloat">
 					<div class="col-4 col-mob-12 floatLeft paddingTop15">
 						<img class="articleImg" src="img/pencil-work.jpg" alt="">
 					</div>
-                	<div class="col-7 col-mob-11 floatLeft articleText">
+                	<div class="col-7 col-mob-12 floatLeft articleText">
                     	<h3 class="articleHead">Learn to maximize your loans</h3>
                     	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
-                    	<button class="articleButton"><span>Read more</span></button>
+                    	<a href="article.html"><button class="articleButton"><span>Read more</span></button></a>
+                	</div>
+				</div>
+				<div class="col-12 articleDiv clearFloat">
+					<div class="col-4 col-mob-12 floatLeft paddingTop15">
+						<img class="articleImg" src="img/pencil-work.jpg" alt="">
+					</div>
+                	<div class="col-7 col-mob-12 floatLeft articleText">
+                    	<h3 class="articleHead">Learn to maximize your loans</h3>
+                    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...</p>
+                    	<a href="article.html"><button class="articleButton"><span>Read more</span></button></a>
                 	</div>
 				</div>
             </div>
-		<div class="ad1 col-4 desktop floatRight"><!-- half page ad goes here--></div>
+		<div class="ad1 col-4 floatRight desktop"><!-- half page ad goes here--></div>
+		<div class="ad1-tab col-tab-12 col-4 floatRight tablet"><!-- half page ad goes here--></div>
 	</div>
-<div class="clearFloat">
+<div class="clearFloat col-mob-12">
 		<footer class="centered">
 		<p>© 2018 LoanPaymentsCalculator.com<br>
 				Terms and Conditions | Privacy Policy | Accessibility</p>
