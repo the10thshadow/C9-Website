@@ -451,6 +451,9 @@ nav {
 .textArticle {
 
 }
+#moreArticles {
+	display: none;
+}
 .heroText {
     position:relative;
     top:30px;
