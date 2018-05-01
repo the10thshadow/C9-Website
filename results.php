@@ -189,7 +189,7 @@
 						data: {
 							labels:["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
 							datasets: [{
-								label:["Your Payments"],
+								label:["Your Total Balance"],
 								data:[amount,45000,41000,35000,31000,27000,23000,19000,16000,12000,4500,0],
 								"fill": false,
 								borderColor: [
@@ -200,7 +200,7 @@
 								],
 								borderWidth: 1,
 							}, {
-								label:["Your Interest"],
+								label:["Total Interest Paid"],
 								data:[1200, 2500, 8000, 12000, 15000, 19500, 22000, 26000, 31000, 36000,48000],
 								type:'line',
 								"fill": false,
@@ -212,7 +212,7 @@
 								],
 								borderWidth: 1
 							}, {
-								label:["Your Total"],
+								label:["Interest to Pay off"],
 								data:[43000,41000,35000,31000,26000,22000,19000,15000,12000,8000,0,0],
 								type:'line',
 								"fill": false,
